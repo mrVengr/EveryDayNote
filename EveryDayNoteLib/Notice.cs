@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace EveryDayNoteLib
 {
-    class Notice
+    public interface Notice
     {
+        void Create();
     }
 }

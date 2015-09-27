@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace EveryDayNoteLib
 {
-    class PictNote
+    public class PictNote:Notice
     {
+        public void Create()
+        {
+
+        }
     }
 }
