@@ -43,6 +43,7 @@
     <Compile Include="Notice.cs" />
     <Compile Include="PictNote.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Prototype.cs" />
     <Compile Include="TextNote.cs" />
     <Compile Include="VideoNote.cs" />
     <Compile Include="VoNote.cs" />
