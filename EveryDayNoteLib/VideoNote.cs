@@ -10,7 +10,7 @@ namespace EveryDayNoteLib
     {
         public override void Create()
         {
-
+            s = "Video";
         }
 
         public VideoNote(string id)

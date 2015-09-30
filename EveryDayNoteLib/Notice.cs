@@ -8,7 +8,7 @@ namespace EveryDayNoteLib
 {
     public interface Notice
     {
-
+        
         void Create();
     }
 }

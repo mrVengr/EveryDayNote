@@ -21,5 +21,7 @@ namespace EveryDayNoteLib
         {
             return (Prototype)this.MemberwiseClone();
         }
+
+        public static string s;
     }
 }

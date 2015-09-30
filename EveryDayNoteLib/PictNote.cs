@@ -10,7 +10,7 @@ namespace EveryDayNoteLib
     {
         public override void Create()
         {
-
+            s = "Picture";
         }
 
         public PictNote(string id) : base(id)

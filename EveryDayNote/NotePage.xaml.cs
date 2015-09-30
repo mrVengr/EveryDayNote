@@ -25,25 +25,47 @@ namespace EveryDayNote
             InitializeComponent();
         }
         TextNote textNote;
-        Prototype voNote;
+        Prototype voiceNote;
         Prototype videoNote;
         Prototype pictNote;
         Context context;
 
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            textNote = new TextNote("Text");
+            voiceNote = new VoNote("Voice");
+            videoNote = new VideoNote("Video");
+            pictNote = new PictNote("Pict");
+        }
 
         private void Text_Click(object sender, RoutedEventArgs e)
         {
             context = new Context((TextNote)textNote.Clone());
             context.ExecuteOperation();
-            MessageBox.Show(TextNote.s);
+            MessageBox.Show(Prototype.s);
         }
 
-        private void Window_Loaded(object sender, RoutedEventArgs e)
+        private void Voice_Click(object sender, RoutedEventArgs e)
         {
-            textNote = new TextNote("Text");
-            voNote = new VoNote("Voice");
-            videoNote = new VideoNote("Video");
-            pictNote = new PictNote("Pict");
+            context = new Context((VoNote)voiceNote.Clone());
+            context.ExecuteOperation();
+            MessageBox.Show(Prototype.s);
+        }
+
+        private void Video_Click(object sender, RoutedEventArgs e)
+        {
+
+            context = new Context((VideoNote)videoNote.Clone());
+            context.ExecuteOperation();
+            MessageBox.Show(Prototype.s);
+        }
+
+        private void Picture_Click(object sender, RoutedEventArgs e)
+        {
+            context.SetStrategy((PictNote)pictNote.Clone());
+            //context = new Context((TextNote)pictNote.Clone());
+            context.ExecuteOperation();
+            MessageBox.Show(Prototype.s);
         }
     }
 }

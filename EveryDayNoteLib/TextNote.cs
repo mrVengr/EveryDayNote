@@ -10,9 +10,9 @@ namespace EveryDayNoteLib
     {
         public override void Create()
         {
-            s = "222";
+            s = "Text";
         }
-        public static string s="";
+
         public TextNote(string id)
             : base(id)
         {

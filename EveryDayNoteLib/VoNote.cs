@@ -10,7 +10,7 @@ namespace EveryDayNoteLib
     {
         public override void Create()
         {
-            
+            s = "Audio";
         }
 
         public VoNote(string id)
