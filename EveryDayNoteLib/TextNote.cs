@@ -6,11 +6,16 @@ using System.Threading.Tasks;
 
 namespace EveryDayNoteLib
 {
-    public class TextNote:Notice
+    public class TextNote : Prototype
     {
-        public void Create()
+        public override void Create()
         {
-
+            s = "222";
+        }
+        public static string s="";
+        public TextNote(string id)
+            : base(id)
+        {
         }
     }
 }

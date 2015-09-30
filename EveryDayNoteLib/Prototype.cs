@@ -6,12 +6,14 @@ using System.Threading.Tasks;
 
 namespace EveryDayNoteLib
 {
-    public abstract class Prototype
+    public abstract class Prototype:Notice
     {
         public Prototype(string id)
         {
             this.Id = id;
         }
+
+        public abstract void Create();
 
         public string Id { get; private set; }
 

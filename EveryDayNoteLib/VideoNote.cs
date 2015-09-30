@@ -6,11 +6,17 @@ using System.Threading.Tasks;
 
 namespace EveryDayNoteLib
 {
-    public class VideoNote:Notice
+    public class VideoNote : Prototype
     {
-        public void Create()
+        public override void Create()
         {
 
         }
+
+        public VideoNote(string id)
+            : base(id)
+        {
+        }
+
     }
 }

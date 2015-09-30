@@ -1,0 +1,5 @@
+D:\Projects\EveryDayNote\EveryDayNoteLib\bin\Debug\EveryDayNoteLib.dll
+D:\Projects\EveryDayNote\EveryDayNoteLib\bin\Debug\EveryDayNoteLib.pdb
+D:\Projects\EveryDayNote\EveryDayNoteLib\obj\Debug\EveryDayNoteLib.dll
+D:\Projects\EveryDayNote\EveryDayNoteLib\obj\Debug\EveryDayNoteLib.pdb
+D:\Projects\EveryDayNote\EveryDayNoteLib\obj\Debug\EveryDayNoteLib.csprojResolveAssemblyReference.cache

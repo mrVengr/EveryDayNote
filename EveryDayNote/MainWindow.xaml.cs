@@ -24,5 +24,11 @@ namespace EveryDayNote
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            NotePage NP = new NotePage();
+            NP.Show();
+        }
     }
 }

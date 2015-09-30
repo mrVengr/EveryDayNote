@@ -6,11 +6,17 @@ using System.Threading.Tasks;
 
 namespace EveryDayNoteLib
 {
-    public class VoNote:Notice
+    public class VoNote : Prototype
     {
-        public void Create()
+        public override void Create()
         {
             
         }
+
+        public VoNote(string id)
+            : base(id)
+        {
+        }
+
     }
 }
