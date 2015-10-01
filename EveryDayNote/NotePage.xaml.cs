@@ -63,7 +63,6 @@ namespace EveryDayNote
         private void Picture_Click(object sender, RoutedEventArgs e)
         {
             context.SetStrategy((PictNote)pictNote.Clone());
-            //context = new Context((TextNote)pictNote.Clone());
             context.ExecuteOperation();
             MessageBox.Show(Prototype.s);
         }
