@@ -6,16 +6,15 @@ using System.Threading.Tasks;
 
 namespace EveryDayNoteLib
 {
-    public class TextNote : Prototype
+    public class TextNote : NotePart
     {
+
         public override void Create()
         {
-            s = "Text";
+            ID = Guid.NewGuid();
+            NoteParts.Add(this);
         }
 
-        public TextNote(string id)
-            : base(id)
-        {
-        }
+
     }
 }

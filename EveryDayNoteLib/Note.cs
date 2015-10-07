@@ -6,18 +6,13 @@ using System.Threading.Tasks;
 
 namespace EveryDayNoteLib
 {
-    public class VideoNote : NotePart
+    public class Note:INote
     {
-
-
-
-        public override void Create()
+        public List<NotePart> noteParts = new List<NotePart>();
+        public void GetProxy()
         {
-            ID = Guid.NewGuid();
-            NoteParts.Add(this);
+            NoteProxy proxy = new NoteProxy(this);
         }
-
-
 
     }
 }

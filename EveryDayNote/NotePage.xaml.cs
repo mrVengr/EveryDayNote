@@ -24,47 +24,44 @@ namespace EveryDayNote
         {
             InitializeComponent();
         }
-        TextNote textNote;
-        Prototype voiceNote;
-        Prototype videoNote;
-        Prototype pictNote;
         Context context;
+        Note note = new Note();
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            textNote = new TextNote("Text");
-            voiceNote = new VoNote("Voice");
-            videoNote = new VideoNote("Video");
-            pictNote = new PictNote("Pict");
+
         }
 
         private void Text_Click(object sender, RoutedEventArgs e)
         {
-            context = new Context((TextNote)textNote.Clone());
-            context.ExecuteOperation();
-            MessageBox.Show(Prototype.s);
+            context = new Context(new TextNote());
+            context.ExecuteOperation(note);
+
         }
 
         private void Voice_Click(object sender, RoutedEventArgs e)
         {
-            context = new Context((VoNote)voiceNote.Clone());
-            context.ExecuteOperation();
-            MessageBox.Show(Prototype.s);
+            context = new Context(new VoNote());
+            context.ExecuteOperation(note);
         }
 
         private void Video_Click(object sender, RoutedEventArgs e)
         {
 
-            context = new Context((VideoNote)videoNote.Clone());
-            context.ExecuteOperation();
-            MessageBox.Show(Prototype.s);
+            context = new Context(new VideoNote());
+            context.ExecuteOperation(note);
         }
 
         private void Picture_Click(object sender, RoutedEventArgs e)
         {
-            context.SetStrategy((PictNote)pictNote.Clone());
-            context.ExecuteOperation();
-            MessageBox.Show(Prototype.s);
+            context = new Context(new PictNote());
+            context.ExecuteOperation(note);
+
+        }
+
+        private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            note.GetProxy();
         }
     }
 }

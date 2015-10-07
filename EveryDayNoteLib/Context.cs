@@ -8,22 +8,24 @@ namespace EveryDayNoteLib
 {
     public class Context
     {
-        private Notice notice;
+        private NotePart notice;
 
-        public Context(Notice _notice)
+        public Context(NotePart _notice)
         {
             notice = _notice;
         }
 
-        public void SetStrategy(Notice _notice)
+        public void SetStrategy(NotePart _notice)
         {
+
             notice = _notice;
         }
 
 
-        public void ExecuteOperation()
+        public void ExecuteOperation(Note _note)
         {
             notice.Create();
+            _note.noteParts.Add(notice);
         }
     }
 }

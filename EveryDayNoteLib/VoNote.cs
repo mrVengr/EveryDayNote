@@ -6,16 +6,12 @@ using System.Threading.Tasks;
 
 namespace EveryDayNoteLib
 {
-    public class VoNote : Prototype
+    public class VoNote : NotePart
     {
         public override void Create()
         {
-            s = "Audio";
-        }
-
-        public VoNote(string id)
-            : base(id)
-        {
+            ID = Guid.NewGuid();
+            NoteParts.Add(this);
         }
 
     }

@@ -6,15 +6,15 @@ using System.Threading.Tasks;
 
 namespace EveryDayNoteLib
 {
-    public class PictNote:Prototype
+    public class PictNote:NotePart
     {
+
         public override void Create()
         {
-            s = "Picture";
+            ID = Guid.NewGuid();
+            NoteParts.Add(this);
         }
 
-        public PictNote(string id) : base(id)
-        {
-        }
+
     }
 }
