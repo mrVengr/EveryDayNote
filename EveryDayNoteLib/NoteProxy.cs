@@ -1,38 +1,49 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace EveryDayNoteLib
+﻿namespace EveryDayNoteLib
 {
-    public class NoteProxy:INote
-    {
-        private Note note;
-        public static List<NoteProxy> notesPr = new List<NoteProxy>();
-        public bool isVideo = false;
-        public bool isAudio = false;
-        public bool isPicture = false;
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Text;
+    using System.Threading.Tasks;
 
-        public NoteProxy(Note _note)
+    public class NoteProxy : INote
+    {
+        public bool IsVideo = false;
+        public bool IsAudio = false;
+        public bool IsPicture = false;
+        private static List<NoteProxy> notesPr = new List<NoteProxy>();
+        private Note note;
+        public NoteProxy(Note note_)
         {
-            notesPr.Add(this);
-            note = _note;
-            foreach (var item in note.noteParts)
+            NotesPr.Add(this);
+            this.note = note_;
+            foreach (var item in this.note.NoteParts)
             {
 
                 switch (item.GetType().FullName)
                 {
                     case "EveryDayNoteLib.PictNote":
-                        isPicture = true;
+                        this.IsPicture = true;
                         break;
                     case "EveryDayNoteLib.VideoNote":
-                        isVideo = true;
+                        this.IsVideo = true;
                         break;
                     case "EveryDayNoteLib.VoNote":
-                        isAudio = true;
+                        this.IsAudio = true;
                         break;
                 }
+            }
+        }
+
+        public static List<NoteProxy> NotesPr
+        {
+            get
+            {
+                return notesPr;
+            }
+            set
+            {
+                notesPr = value;
             }
         }
 

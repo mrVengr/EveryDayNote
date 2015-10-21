@@ -1,14 +1,25 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace EveryDayNoteLib
+﻿namespace EveryDayNoteLib
 {
-    public class Note:INote
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Text;
+    using System.Threading.Tasks;
+
+    public class Note : INote
     {
-        public List<NotePart> noteParts = new List<NotePart>();
+        private List<NotePart> noteParts = new List<NotePart>();
+        public List<NotePart> NoteParts 
+        {
+            get 
+            { 
+                return this.noteParts; 
+            }
+            set 
+            {
+                this.noteParts = value;
+            }
+        }
         public void GetProxy()
         {
             NoteProxy proxy = new NoteProxy(this);

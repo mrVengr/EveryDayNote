@@ -1,20 +1,39 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace EveryDayNoteLib
+﻿namespace EveryDayNoteLib
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Text;
+    using System.Threading.Tasks;
+
+
     public abstract class NotePart
     {
-        public static List<NotePart> NoteParts = new List<NotePart>();
+        
+        
+
+
         private Guid id;
+        private List<NotePart> noteParts = new List<NotePart>();
+
+        public List<NotePart> NoteParts
+        {
+            get
+            {
+                return this.noteParts;
+            }
+            set
+            {
+                this.noteParts = value;
+            }
+        }
+
         public Guid ID
         {
-            get { return id; }
-            set { id = value; }
+            get { return this.id; }
+            set { this.id = value; }
         }
+
         public abstract void Create();
     }
 }

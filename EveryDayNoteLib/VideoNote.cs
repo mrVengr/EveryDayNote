@@ -1,11 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace EveryDayNoteLib
+﻿namespace EveryDayNoteLib
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Text;
+    using System.Threading.Tasks;
+
     public class VideoNote : NotePart
     {
 
@@ -13,7 +13,7 @@ namespace EveryDayNoteLib
 
         public override void Create()
         {
-            ID = Guid.NewGuid();
+            this.ID = Guid.NewGuid();
             NoteParts.Add(this);
         }
 

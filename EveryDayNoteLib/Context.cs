@@ -1,31 +1,34 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿
 
 namespace EveryDayNoteLib
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Text;
+    using System.Threading.Tasks;
+
+
     public class Context
     {
         private NotePart notice;
 
-        public Context(NotePart _notice)
+        public Context(NotePart notice_)
         {
-            notice = _notice;
+            this.notice = notice_;
         }
 
-        public void SetStrategy(NotePart _notice)
+        public void SetStrategy(NotePart notice_)
         {
 
-            notice = _notice;
+            this.notice = notice_;
         }
 
 
-        public void ExecuteOperation(Note _note)
+        public void ExecuteOperation(Note note_)
         {
-            notice.Create();
-            _note.noteParts.Add(notice);
+            this.notice.Create();
+            note_.NoteParts.Add(this.notice);
         }
     }
 }
