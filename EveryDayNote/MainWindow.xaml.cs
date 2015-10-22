@@ -15,8 +15,9 @@
     using System.Windows.Navigation;
     using System.Windows.Shapes;
     using EveryDayNoteLib;
+
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for MainWindow
     /// </summary>
     public partial class MainWindow : Window
     {
@@ -29,7 +30,6 @@
         {
             NotePage np = new NotePage();
             np.Show();
-
         }
 
         private void RefreshB_Click(object sender, RoutedEventArgs e)
@@ -62,8 +62,8 @@
                     DockPanel.SetDock(rightBborder, Dock.Right);
                     dockPanel.Children.Add(rightBborder);
                     rightBborder.Child = image;
-
                 }
+
                 if (item.IsPicture)
                 {
                     Button image = new Button();
@@ -77,6 +77,7 @@
                     dockPanel.Children.Add(infoDatBborder);
                     infoDatBborder.Child = image;
                 }
+
                 if (item.IsVideo)
                 {
                     Button image = new Button();
@@ -90,6 +91,7 @@
                     dockPanel.Children.Add(infoBborder);
                     infoBborder.Child = image;
                 }
+
                 noteB.Content = dockPanel;
             }
         }

@@ -6,24 +6,29 @@
     using System.Text;
     using System.Threading.Tasks;
 
+    /// <summary>
+    /// Note Interface
+    /// </summary>
     public class Note : INote
     {
         private List<NotePart> noteParts = new List<NotePart>();
-        public List<NotePart> NoteParts 
+
+        public List<NotePart> NoteParts
         {
-            get 
-            { 
-                return this.noteParts; 
+            get
+            {
+                return this.noteParts;
             }
-            set 
+
+            set
             {
                 this.noteParts = value;
             }
         }
+
         public void GetProxy()
         {
             NoteProxy proxy = new NoteProxy(this);
         }
-
     }
 }

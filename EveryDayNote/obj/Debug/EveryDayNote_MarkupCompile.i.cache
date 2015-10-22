@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-D:\Projects\EveryDayNote\EveryDayNote\obj\Debug\
+D:\Projects\TAU\Новая папка\EveryDayNote\obj\Debug\
 EveryDayNote
 none
 false
-DEBUG;TRACE
-D:\Projects\EveryDayNote\EveryDayNote\App.xaml
+CODE_ANALYSIS;DEBUG;TRACE
+D:\Projects\TAU\Новая папка\EveryDayNote\App.xaml
 2-1535858283
 
 101716038887
-14-954138371
+14863616711
 MainWindow.xaml;NotePage.xaml;
 
 False

@@ -6,13 +6,11 @@
     using System.Text;
     using System.Threading.Tasks;
 
-
+    /// <summary>
+    /// Note parts
+    /// </summary>
     public abstract class NotePart
     {
-        
-        
-
-
         private Guid id;
         private List<NotePart> noteParts = new List<NotePart>();
 
@@ -22,6 +20,7 @@
             {
                 return this.noteParts;
             }
+
             set
             {
                 this.noteParts = value;

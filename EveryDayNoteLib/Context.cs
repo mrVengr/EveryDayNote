@@ -1,6 +1,4 @@
-﻿
-
-namespace EveryDayNoteLib
+﻿namespace EveryDayNoteLib
 {
     using System;
     using System.Collections.Generic;
@@ -8,7 +6,9 @@ namespace EveryDayNoteLib
     using System.Text;
     using System.Threading.Tasks;
 
-
+    /// <summary>
+    /// Context for strategy
+    /// </summary>
     public class Context
     {
         private NotePart notice;
@@ -20,10 +20,8 @@ namespace EveryDayNoteLib
 
         public void SetStrategy(NotePart notice_)
         {
-
             this.notice = notice_;
         }
-
 
         public void ExecuteOperation(Note note_)
         {

@@ -16,19 +16,22 @@
     using EveryDayNoteLib;
 
     /// <summary>
-    /// Interaction logic for NotePage.xaml
+    /// Interaction logic for NotePage
     /// </summary>
     public partial class NotePage : Window
     {
         private Note note = new Note();
         private Context context;
+
         public NotePage()
         {
             this.InitializeComponent();
         }
+
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
         }
+
         private void Text_Click(object sender, RoutedEventArgs e)
         {
             this.context = new Context(new TextNote());
