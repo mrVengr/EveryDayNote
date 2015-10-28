@@ -36,3 +36,23 @@ D:\Projects\TAU\Новая папка\EveryDayNote\obj\Debug\EveryDayNote.Proper
 D:\Projects\TAU\Новая папка\EveryDayNote\obj\Debug\EveryDayNote.csproj.GenerateResource.Cache
 D:\Projects\TAU\Новая папка\EveryDayNote\bin\Debug\EveryDayNote.exe.CodeAnalysisLog.xml
 D:\Projects\TAU\Новая папка\EveryDayNote\bin\Debug\EveryDayNote.exe.lastcodeanalysissucceeded
+D:\Projects\EveryDayNote\EveryDayNote\EveryDayNote\bin\Debug\EveryDayNote.exe.config
+D:\Projects\EveryDayNote\EveryDayNote\EveryDayNote\obj\Debug\EveryDayNote.exe
+D:\Projects\EveryDayNote\EveryDayNote\EveryDayNote\obj\Debug\EveryDayNote.pdb
+D:\Projects\EveryDayNote\EveryDayNote\EveryDayNote\bin\Debug\EveryDayNote.exe
+D:\Projects\EveryDayNote\EveryDayNote\EveryDayNote\bin\Debug\EveryDayNote.pdb
+D:\Projects\EveryDayNote\EveryDayNote\EveryDayNote\bin\Debug\EveryDayNote.exe.CodeAnalysisLog.xml
+D:\Projects\EveryDayNote\EveryDayNote\EveryDayNote\bin\Debug\EveryDayNote.exe.lastcodeanalysissucceeded
+D:\Projects\EveryDayNote\EveryDayNote\EveryDayNote\bin\Debug\EveryDayNoteLib.dll
+D:\Projects\EveryDayNote\EveryDayNote\EveryDayNote\bin\Debug\EveryDayNoteLib.pdb
+D:\Projects\EveryDayNote\EveryDayNote\EveryDayNote\obj\Debug\EveryDayNote.csprojResolveAssemblyReference.cache
+D:\Projects\EveryDayNote\EveryDayNote\EveryDayNote\obj\Debug\MainWindow.baml
+D:\Projects\EveryDayNote\EveryDayNote\EveryDayNote\obj\Debug\MainWindow.g.cs
+D:\Projects\EveryDayNote\EveryDayNote\EveryDayNote\obj\Debug\NotePage.g.cs
+D:\Projects\EveryDayNote\EveryDayNote\EveryDayNote\obj\Debug\App.g.cs
+D:\Projects\EveryDayNote\EveryDayNote\EveryDayNote\obj\Debug\EveryDayNote_MarkupCompile.cache
+D:\Projects\EveryDayNote\EveryDayNote\EveryDayNote\obj\Debug\EveryDayNote_MarkupCompile.lref
+D:\Projects\EveryDayNote\EveryDayNote\EveryDayNote\obj\Debug\NotePage.baml
+D:\Projects\EveryDayNote\EveryDayNote\EveryDayNote\obj\Debug\EveryDayNote.g.resources
+D:\Projects\EveryDayNote\EveryDayNote\EveryDayNote\obj\Debug\EveryDayNote.Properties.Resources.resources
+D:\Projects\EveryDayNote\EveryDayNote\EveryDayNote\obj\Debug\EveryDayNote.csproj.GenerateResource.Cache

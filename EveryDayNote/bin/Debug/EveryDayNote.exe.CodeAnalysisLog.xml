@@ -4,27 +4,27 @@
  <Namespaces>
   <Namespace Name="EveryDayNote">
    <Messages>
-    <Message Id="EveryDay" TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702" Status="Active" Created="2015-10-22 07:35:50Z" FixCategory="Breaking">
+    <Message Id="EveryDay" TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702" Status="Active" Created="2015-10-22 08:15:34Z" FixCategory="Breaking">
      <Issue Name="NamespaceShouldBeDiscreteTerm" Certainty="80" Level="Error">The compound word 'EveryDay' in namespace name 'EveryDayNote' exists as a discrete term. If your usage is intended to be single word, case it as 'Everyday'.</Issue>
     </Message>
    </Messages>
   </Namespace>
  </Namespaces>
  <Targets>
-  <Target Name="D:\Projects\TAU\Новая папка\EveryDayNote\bin\Debug\EveryDayNote.exe">
+  <Target Name="D:\Projects\EveryDayNote\EveryDayNote\EveryDayNote\bin\Debug\EveryDayNote.exe">
    <Modules>
     <Module Name="everydaynote.exe">
      <Messages>
-      <Message TypeName="AssembliesShouldHaveValidStrongNames" Category="Microsoft.Design" CheckId="CA2210" Status="Active" Created="2015-10-22 07:35:50Z" FixCategory="NonBreaking">
+      <Message TypeName="AssembliesShouldHaveValidStrongNames" Category="Microsoft.Design" CheckId="CA2210" Status="Active" Created="2015-10-22 08:15:34Z" FixCategory="NonBreaking">
        <Issue Name="NoStrongName" Certainty="95" Level="CriticalError">Sign 'EveryDayNote.exe' with a strong name key.</Issue>
       </Message>
-      <Message Id="EveryDay" TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702" Status="Active" Created="2015-10-22 07:35:50Z" FixCategory="Breaking">
+      <Message Id="EveryDay" TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702" Status="Active" Created="2015-10-22 08:15:34Z" FixCategory="Breaking">
        <Issue Name="AssemblyShouldBeDiscreteTerm" Certainty="80" Level="Error">The compound word 'EveryDay' in assembly name 'EveryDayNote.exe' exists as a discrete term. If your usage is intended to be single word, case it as 'Everyday'.</Issue>
       </Message>
-      <Message TypeName="MarkAssembliesWithClsCompliant" Category="Microsoft.Design" CheckId="CA1014" Status="Active" Created="2015-10-22 07:35:50Z" FixCategory="NonBreaking">
+      <Message TypeName="MarkAssembliesWithClsCompliant" Category="Microsoft.Design" CheckId="CA1014" Status="Active" Created="2015-10-22 08:15:34Z" FixCategory="NonBreaking">
        <Issue Certainty="95" Level="Error">Mark 'EveryDayNote.exe' with CLSCompliant(true) because it exposes externally visible types.</Issue>
       </Message>
-      <Message TypeName="MarkAssembliesWithNeutralResourcesLanguage" Category="Microsoft.Performance" CheckId="CA1824" Status="Active" Created="2015-10-22 07:35:50Z" FixCategory="NonBreaking">
+      <Message TypeName="MarkAssembliesWithNeutralResourcesLanguage" Category="Microsoft.Performance" CheckId="CA1824" Status="Active" Created="2015-10-22 08:15:34Z" FixCategory="NonBreaking">
        <Issue Certainty="95" Level="Warning">Because assembly 'EveryDayNote.exe' contains a ResX-based resource file, mark it with the NeutralResourcesLanguage attribute, specifying the language of the resources within the assembly. This could improve lookup performance the first time a resource is retrieved.</Issue>
       </Message>
      </Messages>

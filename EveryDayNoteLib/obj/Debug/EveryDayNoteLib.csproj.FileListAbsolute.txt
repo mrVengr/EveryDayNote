@@ -7,3 +7,8 @@ D:\Projects\TAU\Новая папка\EveryDayNoteLib\bin\Debug\EveryDayNoteLib.
 D:\Projects\TAU\Новая папка\EveryDayNoteLib\bin\Debug\EveryDayNoteLib.pdb
 D:\Projects\TAU\Новая папка\EveryDayNoteLib\obj\Debug\EveryDayNoteLib.dll
 D:\Projects\TAU\Новая папка\EveryDayNoteLib\obj\Debug\EveryDayNoteLib.pdb
+D:\Projects\EveryDayNote\EveryDayNote\EveryDayNoteLib\bin\Debug\EveryDayNoteLib.dll
+D:\Projects\EveryDayNote\EveryDayNote\EveryDayNoteLib\bin\Debug\EveryDayNoteLib.pdb
+D:\Projects\EveryDayNote\EveryDayNote\EveryDayNoteLib\obj\Debug\EveryDayNoteLib.csprojResolveAssemblyReference.cache
+D:\Projects\EveryDayNote\EveryDayNote\EveryDayNoteLib\obj\Debug\EveryDayNoteLib.dll
+D:\Projects\EveryDayNote\EveryDayNote\EveryDayNoteLib\obj\Debug\EveryDayNoteLib.pdb

@@ -1,1 +1,4 @@
-<StyleCopViolations />
+<StyleCopViolations>
+  <Violation Section="Root.EveryDayNoteLib.NotePart" LineNumber="13" Source="D:\Projects\EveryDayNote\EveryDayNote\EveryDayNoteLib\NotePart.cs" RuleNamespace="StyleCop.CSharp.LayoutRules" Rule="OpeningCurlyBracketsMustNotBeFollowedByBlankLine" RuleId="SA1505">An opening curly bracket must not be followed by a blank line.</Violation>
+  <Violation Section="Root.EveryDayNoteLib.NotePart" LineNumber="15" Source="D:\Projects\EveryDayNote\EveryDayNote\EveryDayNoteLib\NotePart.cs" RuleNamespace="StyleCop.CSharp.LayoutRules" Rule="CodeMustNotContainMultipleBlankLinesInARow" RuleId="SA1507">The code must not contain multiple blank lines in a row.</Violation>
+</StyleCopViolations>

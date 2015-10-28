@@ -6,10 +6,13 @@
   <project key="16211389">
     <configuration>CODE_ANALYSIS;DEBUG;TRACE</configuration>
   </project>
+  <project key="2004827496">
+    <configuration>TRACE</configuration>
+  </project>
   <sourcecode name="AssemblyInfo.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
       <styleCop>2015.10.21 16:43:19.230</styleCop>
-      <settingsFile>2015.10.22 10:34:40.747</settingsFile>
+      <settingsFile>2015.10.22 11:16:02.655</settingsFile>
       <sourceFile>2015.10.21 16:43:18.409</sourceFile>
       <parser>2015.10.21 16:43:19.230</parser>
       <StyleCop.CSharp.DocumentationRules>2015.10.21 16:43:19.230</StyleCop.CSharp.DocumentationRules>
@@ -32,7 +35,7 @@
   <sourcecode name="Resources.Designer.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
       <styleCop>2015.10.21 16:43:19.230</styleCop>
-      <settingsFile>2015.10.22 10:34:40.747</settingsFile>
+      <settingsFile>2015.10.22 11:16:02.655</settingsFile>
       <sourceFile>2015.10.08 02:30:41.183</sourceFile>
       <parser>2015.10.21 16:43:19.230</parser>
       <StyleCop.CSharp.DocumentationRules>2015.10.21 16:43:19.230</StyleCop.CSharp.DocumentationRules>
@@ -55,7 +58,7 @@
   <sourcecode name=".NETFramework,Version=v4.5.AssemblyAttributes.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
       <styleCop>2015.10.21 16:43:19.230</styleCop>
-      <settingsFile>2015.10.22 10:34:40.747</settingsFile>
+      <settingsFile>2015.10.22 11:16:02.655</settingsFile>
       <sourceFile>2015.09.19 15:49:19.414</sourceFile>
       <parser>2015.10.21 16:43:19.230</parser>
       <StyleCop.CSharp.DocumentationRules>2015.10.21 16:43:19.230</StyleCop.CSharp.DocumentationRules>
@@ -78,8 +81,8 @@
   <sourcecode name="TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
       <styleCop>2015.10.21 16:43:19.230</styleCop>
-      <settingsFile>2015.10.22 10:34:40.747</settingsFile>
-      <sourceFile>2015.09.27 13:59:00.088</sourceFile>
+      <settingsFile>2015.10.22 11:16:02.655</settingsFile>
+      <sourceFile>2015.10.28 15:31:41.263</sourceFile>
       <parser>2015.10.21 16:43:19.230</parser>
       <StyleCop.CSharp.DocumentationRules>2015.10.21 16:43:19.230</StyleCop.CSharp.DocumentationRules>
       <StyleCop.CSharp.DocumentationRules.FilesHashCode>-1967927385</StyleCop.CSharp.DocumentationRules.FilesHashCode>
@@ -101,8 +104,8 @@
   <sourcecode name="TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
       <styleCop>2015.10.21 16:43:19.230</styleCop>
-      <settingsFile>2015.10.22 10:34:40.747</settingsFile>
-      <sourceFile>2015.09.27 13:59:00.120</sourceFile>
+      <settingsFile>2015.10.22 11:16:02.655</settingsFile>
+      <sourceFile>2015.10.28 15:31:41.264</sourceFile>
       <parser>2015.10.21 16:43:19.230</parser>
       <StyleCop.CSharp.DocumentationRules>2015.10.21 16:43:19.230</StyleCop.CSharp.DocumentationRules>
       <StyleCop.CSharp.DocumentationRules.FilesHashCode>-1967927385</StyleCop.CSharp.DocumentationRules.FilesHashCode>
@@ -124,8 +127,8 @@
   <sourcecode name="TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
       <styleCop>2015.10.21 16:43:19.230</styleCop>
-      <settingsFile>2015.10.22 10:34:40.747</settingsFile>
-      <sourceFile>2015.09.27 13:59:00.122</sourceFile>
+      <settingsFile>2015.10.22 11:16:02.655</settingsFile>
+      <sourceFile>2015.10.28 15:31:41.266</sourceFile>
       <parser>2015.10.21 16:43:19.230</parser>
       <StyleCop.CSharp.DocumentationRules>2015.10.21 16:43:19.230</StyleCop.CSharp.DocumentationRules>
       <StyleCop.CSharp.DocumentationRules.FilesHashCode>-1967927385</StyleCop.CSharp.DocumentationRules.FilesHashCode>
@@ -147,7 +150,7 @@
   <sourcecode name="App.xaml.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
       <styleCop>2015.10.21 16:43:19.230</styleCop>
-      <settingsFile>2015.10.22 10:34:40.747</settingsFile>
+      <settingsFile>2015.10.22 11:16:02.655</settingsFile>
       <sourceFile>2015.10.21 22:36:17.552</sourceFile>
       <parser>2015.10.21 16:43:19.230</parser>
       <StyleCop.CSharp.DocumentationRules>2015.10.21 16:43:19.230</StyleCop.CSharp.DocumentationRules>
@@ -170,7 +173,7 @@
   <sourcecode name="MainWindow.xaml.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
       <styleCop>2015.10.21 16:43:19.230</styleCop>
-      <settingsFile>2015.10.22 10:34:40.747</settingsFile>
+      <settingsFile>2015.10.22 11:16:02.655</settingsFile>
       <sourceFile>2015.10.21 23:13:24.716</sourceFile>
       <parser>2015.10.21 16:43:19.230</parser>
       <StyleCop.CSharp.DocumentationRules>2015.10.21 16:43:19.230</StyleCop.CSharp.DocumentationRules>
@@ -193,7 +196,7 @@
   <sourcecode name="NotePage.xaml.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
       <styleCop>2015.10.21 16:43:19.230</styleCop>
-      <settingsFile>2015.10.22 10:34:40.747</settingsFile>
+      <settingsFile>2015.10.22 11:16:02.655</settingsFile>
       <sourceFile>2015.10.22 10:34:19.633</sourceFile>
       <parser>2015.10.21 16:43:19.230</parser>
       <StyleCop.CSharp.DocumentationRules>2015.10.21 16:43:19.230</StyleCop.CSharp.DocumentationRules>
@@ -216,7 +219,7 @@
   <sourcecode name="Settings.Designer.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
       <styleCop>2015.10.21 16:43:19.230</styleCop>
-      <settingsFile>2015.10.22 10:34:40.747</settingsFile>
+      <settingsFile>2015.10.22 11:16:02.655</settingsFile>
       <sourceFile>2015.09.27 13:58:54.412</sourceFile>
       <parser>2015.10.21 16:43:19.230</parser>
       <StyleCop.CSharp.DocumentationRules>2015.10.21 16:43:19.230</StyleCop.CSharp.DocumentationRules>
