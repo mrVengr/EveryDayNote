@@ -29,7 +29,7 @@ DefaultDirName={pf}\{#Name}
 DefaultGroupName={#Name}
 
 ; Каталог, куда будет записан собранный setup и имя исполняемого файла
-OutputDir=C:\Setup
+OutputDir=..\..\..\Setup
 OutputBaseFileName=setup0.0.1
 
 ; Файл иконки
