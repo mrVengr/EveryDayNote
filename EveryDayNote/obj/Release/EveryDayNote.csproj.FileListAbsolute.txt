@@ -16,3 +16,5 @@ D:\Projects\EveryDayNote\EveryDayNote\EveryDayNote\obj\Release\EveryDayNote.Prop
 D:\Projects\EveryDayNote\EveryDayNote\EveryDayNote\obj\Release\EveryDayNote.csproj.GenerateResource.Cache
 D:\Projects\EveryDayNote\EveryDayNote\EveryDayNote\obj\Release\EveryDayNote.exe
 D:\Projects\EveryDayNote\EveryDayNote\EveryDayNote\obj\Release\EveryDayNote.pdb
+D:\Projects\EveryDayNote\EveryDayNote\EveryDayNote\obj\Release\NoteUserControl.baml
+D:\Projects\EveryDayNote\EveryDayNote\EveryDayNote\obj\Release\NoteUserControl.g.cs

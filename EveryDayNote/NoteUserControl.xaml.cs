@@ -14,31 +14,15 @@
     using System.Windows.Media.Imaging;
     using System.Windows.Navigation;
     using System.Windows.Shapes;
-    using EveryDayNoteLib;
 
     /// <summary>
-    /// Interaction logic for MainWindow
+    /// Interaction logic for NoteUserControl.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class NoteUserControl : UserControl
     {
-        public MainWindow()
+        public NoteUserControl()
         {
             this.InitializeComponent();
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            NotePage np = new NotePage();
-            np.Show();
-        }
-
-        private void RefreshB_Click(object sender, RoutedEventArgs e)
-        {
-            foreach (var item in NoteProxy.NotesPr)
-            {
-                NoteUserControl noteUC = new NoteUserControl();
-                WrapP.Children.Add(noteUC);
-            }
         }
     }
 }
