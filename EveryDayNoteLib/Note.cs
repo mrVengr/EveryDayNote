@@ -11,18 +11,18 @@
     /// </summary>
     public class Note : INote
     {
-        private List<NotePart> noteParts = new List<NotePart>();
+        private NoteComponent component;
 
-        public List<NotePart> NoteParts
+        public NoteComponent NoteComponent
         {
             get
             {
-                return this.noteParts;
+                return this.component;
             }
 
             set
             {
-                this.noteParts = value;
+                this.component = value;
             }
         }
 

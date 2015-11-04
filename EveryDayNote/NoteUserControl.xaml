@@ -21,6 +21,30 @@
                 </RadialGradientBrush>
             </Label.Background>
         </Label>
+        <Ellipse x:Name="AudioEl" HorizontalAlignment="Left" Height="51" Margin="10,56,0,0" Stroke="#FF44662E" VerticalAlignment="Top" Width="65">
+            <Ellipse.Effect>
+                <DropShadowEffect Color="#FFDDF797"/>
+            </Ellipse.Effect>
+            <Ellipse.Fill>
+                <ImageBrush ImageSource="pack://application:,,,/Images/Audio.jpg" Stretch="Uniform"/>
+            </Ellipse.Fill>
+        </Ellipse>
+        <Ellipse x:Name="PictureEl" HorizontalAlignment="Left" Height="51" Margin="73,79,0,0" Stroke="#FF44662E" VerticalAlignment="Top" Width="65">
+            <Ellipse.Effect>
+                <DropShadowEffect Color="#FFDDF797"/>
+            </Ellipse.Effect>
+            <Ellipse.Fill>
+                <ImageBrush ImageSource="pack://application:,,,/Images/Picture.png" Stretch="Uniform"/>
+            </Ellipse.Fill>
+        </Ellipse>
+        <Ellipse x:Name="VideoEl" HorizontalAlignment="Left" Height="51" Margin="135,56,0,0" Stroke="#FF44662E" VerticalAlignment="Top" Width="65" RenderTransformOrigin="2.446,0.529">
+            <Ellipse.Effect>
+                <DropShadowEffect Color="#FFDDF797"/>
+            </Ellipse.Effect>
+            <Ellipse.Fill>
+                <ImageBrush ImageSource="pack://application:,,,/Images/Video.png" Stretch="Uniform"/>
+            </Ellipse.Fill>
+        </Ellipse>
 
     </Grid>
 </UserControl>

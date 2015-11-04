@@ -21,7 +21,7 @@
     public partial class NotePage : Window
     {
         private Note note = new Note();
-        private Context context;
+        private NoteComponent component = new NoteComponent();
 
         public NotePage()
         {
@@ -34,30 +34,27 @@
 
         private void Text_Click(object sender, RoutedEventArgs e)
         {
-            this.context = new Context(new TextNote());
-            this.context.ExecuteOperation(this.note);
+            this.component.Add(new TextNote());
         }
 
         private void Voice_Click(object sender, RoutedEventArgs e)
         {
-            this.context = new Context(new VoNote());
-            this.context.ExecuteOperation(this.note);
+            this.component.Add(new VoNote());
         }
 
         private void Video_Click(object sender, RoutedEventArgs e)
         {
-            this.context = new Context(new VideoNote());
-            this.context.ExecuteOperation(this.note);
+            this.component.Add(new VideoNote());
         }
 
         private void Picture_Click(object sender, RoutedEventArgs e)
         {
-            this.context = new Context(new PictNote());
-            this.context.ExecuteOperation(this.note);
+            this.component.Add(new PictNote());
         }
 
         private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
         {
+            this.note.NoteComponent = this.component;
             this.note.GetProxy();
         }
     }

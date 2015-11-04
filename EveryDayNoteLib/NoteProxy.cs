@@ -21,19 +21,22 @@
         {
             NotesPr.Add(this);
             this.note = note_;
-            foreach (var item in this.note.NoteParts)
+            if (this.note.NoteComponent.Children != null)
             {
-                switch (item.GetType().FullName)
+                foreach (var item in this.note.NoteComponent.Children)
                 {
-                    case "EveryDayNoteLib.PictNote":
-                        this.IsPicture = true;
-                        break;
-                    case "EveryDayNoteLib.VideoNote":
-                        this.IsVideo = true;
-                        break;
-                    case "EveryDayNoteLib.VoNote":
-                        this.IsAudio = true;
-                        break;
+                    switch (item.GetType().FullName)
+                    {
+                        case "EveryDayNoteLib.PictNote":
+                            this.IsPicture = true;
+                            break;
+                        case "EveryDayNoteLib.VideoNote":
+                            this.IsVideo = true;
+                            break;
+                        case "EveryDayNoteLib.VoNote":
+                            this.IsAudio = true;
+                            break;
+                    }
                 }
             }
         }

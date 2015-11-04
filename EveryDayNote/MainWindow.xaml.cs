@@ -29,14 +29,11 @@
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             NotePage np = new NotePage();
-            np.Show();
-        }
-
-        private void RefreshB_Click(object sender, RoutedEventArgs e)
-        {
+            np.ShowDialog();
+            WrapP.Children.Clear();
             foreach (var item in NoteProxy.NotesPr)
             {
-                NoteUserControl noteUC = new NoteUserControl();
+                NoteUserControl noteUC = new NoteUserControl(item);
                 WrapP.Children.Add(noteUC);
             }
         }

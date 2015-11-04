@@ -42,9 +42,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Context.cs" />
     <Compile Include="INote.cs" />
     <Compile Include="Note.cs" />
+    <Compile Include="NoteComponent.cs" />
     <Compile Include="NoteProxy.cs" />
     <Compile Include="NotePart.cs" />
     <Compile Include="PictNote.cs" />
