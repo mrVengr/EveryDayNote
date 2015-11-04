@@ -8,7 +8,7 @@
             <ColumnDefinition Width="0*"/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <Menu Height="112" Margin="2,0" RenderTransformOrigin="-1.226,-0.492" VerticalAlignment="Top" Grid.ColumnSpan="2">
+        <Menu Height="145" Margin="2,0" RenderTransformOrigin="-1.226,-0.492" VerticalAlignment="Top" Grid.ColumnSpan="2">
             <MenuItem Header="Add" Height="25" UseLayoutRounding="True" Margin="2">
                 <MenuItem Header="Text" x:Name="Text" Click="Text_Click" />
                 <MenuItem Header="Audio"  x:Name="Voice" Click="Voice_Click"/>
@@ -16,8 +16,10 @@
                 <MenuItem Header="Picture" x:Name="Picture" Click="Picture_Click"/>
 
             </MenuItem>
-            <DocumentViewer VerticalAlignment="Top"/>
+            <DocumentViewer VerticalAlignment="Top" Height="109"/>
         </Menu>
-
+        <ScrollViewer Margin="0,150,0,0" VerticalScrollBarVisibility="Auto" Grid.ColumnSpan="2" HorizontalContentAlignment="Center">
+            <WrapPanel x:Name="FieldPanel" Orientation="Vertical"/>
+        </ScrollViewer>
     </Grid>
 </Window>

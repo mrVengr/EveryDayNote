@@ -59,6 +59,18 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="UserControls\AudioPartUC.xaml.cs">
+      <DependentUpon>AudioPartUC.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\PicturePartUC.xaml.cs">
+      <DependentUpon>PicturePartUC.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\TextPartUC.xaml.cs">
+      <DependentUpon>TextPartUC.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\VideoPartUC.xaml.cs">
+      <DependentUpon>VideoPartUC.xaml</DependentUpon>
+    </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -75,7 +87,23 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="NoteUserControl.xaml">
+    <Page Include="UserControls\AudioPartUC.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\NoteUserControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\PicturePartUC.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\TextPartUC.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\VideoPartUC.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -84,7 +112,7 @@
     <Compile Include="NotePage.xaml.cs">
       <DependentUpon>NotePage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="NoteUserControl.xaml.cs">
+    <Compile Include="UserControls\NoteUserControl.xaml.cs">
       <DependentUpon>NoteUserControl.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">

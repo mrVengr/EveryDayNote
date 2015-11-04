@@ -14,8 +14,9 @@
     using System.Windows.Media.Imaging;
     using System.Windows.Navigation;
     using System.Windows.Shapes;
+    using EveryDayNote.UserControls;
     using EveryDayNoteLib;
-
+    
     /// <summary>
     /// Interaction logic for MainWindow
     /// </summary>
