@@ -16,5 +16,9 @@
         {
             base.Component.Text = base.Component.tp.Text;
         }
+
+        public override void SetData()
+        {
+        }
     }
 }

@@ -33,6 +33,10 @@
         { 
         }
 
+        public override void SetData()
+        {
+        }
+
         public override void Encrypt()
         {
         }

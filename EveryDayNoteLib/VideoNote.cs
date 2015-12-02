@@ -20,5 +20,9 @@
         public override void Encrypt()
         {
         }
+
+        public override void SetData()
+        {
+        }
     }
 }

@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="EveryDayNoteLib.Note" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="16.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAACAAAAAAAAAAAAgAAAAAAAAAAAAQAA=</HashCode>
+      <FileName>Note.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="EveryDayNoteLib.NoteComponent" Collapsed="true">
+    <Position X="5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAQAAAAEBAAAAAAAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>NoteComponent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EveryDayNoteLib.NotePart" Collapsed="true">
+    <Position X="7.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAIABAAAAgAAAAAAAQAAAAEAAAEAAAAAAAAAAAgA=</HashCode>
+      <FileName>NotePart.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EveryDayNoteLib.NoteProxy" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="18.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ASAAABAgAAIQAAACAAAAAAAAAAAAAAEAAAABAAAAAAA=</HashCode>
+      <FileName>NoteProxy.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="EveryDayNoteLib.PictNote" Collapsed="true">
+    <Position X="2.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>PictNote.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EveryDayNoteLib.RSA" Collapsed="true">
+    <Position X="16.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAEAAAAwAAAAAAAAAAAAAEAAAQMBGEGUAAAAAAAA=</HashCode>
+      <FileName>RSA.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EveryDayNoteLib.TextDecorator" Collapsed="true">
+    <Position X="10.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAEAAQAA=</HashCode>
+      <FileName>TextDecorator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EveryDayNoteLib.TextEncrypt" Collapsed="true">
+    <Position X="9.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAAAAAQAAAAAAAAAAAAAEgAAAAAAAAAAAA=</HashCode>
+      <FileName>TextEncrypt.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EveryDayNoteLib.TextNoEncrypt" Collapsed="true">
+    <Position X="11.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>TextNoEncrypt.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EveryDayNoteLib.TextNote" Collapsed="true">
+    <Position X="7.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAADAAAAAA=</HashCode>
+      <FileName>TextNote.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EveryDayNoteLib.VideoNote" Collapsed="true">
+    <Position X="14" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>VideoNote.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EveryDayNoteLib.VoNote" Collapsed="true">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>VoNote.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="EveryDayNoteLib.INote" Collapsed="true">
+    <Position X="16.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>INote.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

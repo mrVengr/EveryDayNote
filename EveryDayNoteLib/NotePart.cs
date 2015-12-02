@@ -33,8 +33,17 @@
             set { this.id = value; }
         }
 
+        public abstract void SetData();
+
         public abstract void Create();
 
         public abstract void Encrypt();
+
+        public void Save()
+        {
+            SetData();
+            Encrypt();
+        }
+
     }
 }

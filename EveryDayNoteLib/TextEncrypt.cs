@@ -54,5 +54,9 @@
                 StreamReader reader = new StreamReader(cryptoStream);
                 return reader.ReadToEnd();
             }
+
+            public override void SetData()
+            {
+            }
     }
 }
