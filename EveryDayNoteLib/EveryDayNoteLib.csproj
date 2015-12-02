@@ -55,7 +55,6 @@
     <Compile Include="NotePart.cs" />
     <Compile Include="PictNote.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RSA.cs" />
     <Compile Include="TextEncrypt.cs" />
     <Compile Include="TextDecorator.cs" />
     <Compile Include="TextNoEncrypt.cs" />

@@ -20,39 +20,55 @@
         static byte[] bytes = ASCIIEncoding.ASCII.GetBytes("ZeroCool");
         public override void Encrypt()
             {
-                RSA Rsa = new RSA();
-                base.Component.Text = Rsa.encode(base.Component.tp.Text);
-                //base.Save();
+                //RSA Rsa = new RSA();
+                //base.Component.Text = Rsa.encode(base.Component.tp.Text);
 
-                //if (String.IsNullOrEmpty(base.Component.tp.Text))
-                //{
-                //    throw new ArgumentNullException
-                //           ("The string which needs to be encrypted can not be null.");
-                //}
-                //DESCryptoServiceProvider cryptoProvider = new DESCryptoServiceProvider();
-                //MemoryStream memoryStream = new MemoryStream();
-                //CryptoStream cryptoStream = new CryptoStream(memoryStream,
-                //    cryptoProvider.CreateEncryptor(bytes, bytes), CryptoStreamMode.Write);
-                //StreamWriter writer = new StreamWriter(cryptoStream);
-                //writer.Write(base.Component.tp.Text);
-                //writer.Flush();
-                //cryptoStream.FlushFinalBlock();
-                //writer.Flush();
-                
-                //StreamReader s =new StreamReader(cryptoStream);
-                //base.Component.Text =s.ReadToEnd();
-                //base.Component.Text =Convert.ToBase64String(memoryStream.GetBuffer(), 0, (int)memoryStream.Length);
+                try
+                {
+                    UnicodeEncoding ByteConverter = new UnicodeEncoding();
+                    byte[] encryptedData;
+                    using (RSACryptoServiceProvider RSA = new RSACryptoServiceProvider())
+                    {
+                        RSA.ImportParameters(RSA.ExportParameters(false));
+  
+                        
+                        byte[] Data = ByteConverter.GetBytes(base.Component.tp.Text);
+                        encryptedData = RSA.Encrypt(Data , false);
+                    }
+                    base.Component.Text = ByteConverter.GetString(encryptedData);
+                }
+                //Catch and display a CryptographicException  
+                //to the console.
+                catch (CryptographicException e)
+                {
+                    Console.WriteLine(e.Message);
+                    base.Component.Text = base.Component.tp.Text;
+                }
+               
             }
 
             public string Decrypt() // расшифровка сообщения
             {
-                DESCryptoServiceProvider cryptoProvider = new DESCryptoServiceProvider();
-                MemoryStream memoryStream = new MemoryStream
-                        (Convert.FromBase64String(base.Component.Text));
-                CryptoStream cryptoStream = new CryptoStream(memoryStream,
-                    cryptoProvider.CreateDecryptor(bytes, bytes), CryptoStreamMode.Read);
-                StreamReader reader = new StreamReader(cryptoStream);
-                return reader.ReadToEnd();
+                try
+                {
+                    UnicodeEncoding ByteConverter = new UnicodeEncoding();
+                    byte[] decryptedData;
+                    //Create a new instance of RSACryptoServiceProvider.
+                    using (RSACryptoServiceProvider RSA = new RSACryptoServiceProvider())
+                    {
+                        RSA.ImportParameters(RSA.ExportParameters(true));
+
+                        byte[] Data = ByteConverter.GetBytes(base.Component.Text);
+                        decryptedData = RSA.Decrypt(Data, false);
+                    }
+                    return ByteConverter.GetString(decryptedData);
+                }
+                catch (CryptographicException e)
+                {
+                    Console.WriteLine(e.ToString());
+
+                    return null;
+                }
             }
 
             public override void SetData()
