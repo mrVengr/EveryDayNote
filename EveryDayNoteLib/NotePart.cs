@@ -34,5 +34,7 @@
         }
 
         public abstract void Create();
+
+        public abstract void Encrypt();
     }
 }

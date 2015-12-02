@@ -3,3 +3,5 @@ D:\Projects\EveryDayNote\EveryDayNote\EveryDayNoteLib\bin\Release\EveryDayNoteLi
 D:\Projects\EveryDayNote\EveryDayNote\EveryDayNoteLib\obj\Release\EveryDayNoteLib.csprojResolveAssemblyReference.cache
 D:\Projects\EveryDayNote\EveryDayNote\EveryDayNoteLib\obj\Release\EveryDayNoteLib.dll
 D:\Projects\EveryDayNote\EveryDayNote\EveryDayNoteLib\obj\Release\EveryDayNoteLib.pdb
+D:\Projects\EveryDayNote\EveryDayNote\EveryDayNoteLib\bin\Release\UserControls.dll
+D:\Projects\EveryDayNote\EveryDayNote\EveryDayNoteLib\bin\Release\UserControls.pdb

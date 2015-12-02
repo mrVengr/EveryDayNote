@@ -59,18 +59,6 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="UserControls\AudioPartUC.xaml.cs">
-      <DependentUpon>AudioPartUC.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="UserControls\PicturePartUC.xaml.cs">
-      <DependentUpon>PicturePartUC.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="UserControls\TextPartUC.xaml.cs">
-      <DependentUpon>TextPartUC.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="UserControls\VideoPartUC.xaml.cs">
-      <DependentUpon>VideoPartUC.xaml</DependentUpon>
-    </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -87,32 +75,16 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="UserControls\AudioPartUC.xaml">
-      <SubType>Designer</SubType>
+    <Page Include="NoteUserControl.xaml">
       <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="UserControls\NoteUserControl.xaml">
       <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="UserControls\PicturePartUC.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="UserControls\TextPartUC.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="UserControls\VideoPartUC.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="NotePage.xaml.cs">
       <DependentUpon>NotePage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\NoteUserControl.xaml.cs">
+    <Compile Include="NoteUserControl.xaml.cs">
       <DependentUpon>NoteUserControl.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -147,6 +119,10 @@
     <ProjectReference Include="..\EveryDayNoteLib\EveryDayNoteLib.csproj">
       <Project>{02011674-87d9-433e-9a53-a03b5466a8c6}</Project>
       <Name>EveryDayNoteLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UserControls\UserControls.csproj">
+      <Project>{640cb49b-0107-4c39-85ac-d8720fc241cb}</Project>
+      <Name>UserControls</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

@@ -16,10 +16,10 @@
                 <MenuItem Header="Picture" x:Name="Picture" Click="Picture_Click"/>
 
             </MenuItem>
-            <DocumentViewer VerticalAlignment="Top" Height="109"/>
+            <DocumentViewer VerticalAlignment="Top" Height="109" Width="278"/>
         </Menu>
-        <ScrollViewer Margin="0,150,0,0" VerticalScrollBarVisibility="Auto" Grid.ColumnSpan="2" HorizontalContentAlignment="Center">
-            <WrapPanel x:Name="FieldPanel" Orientation="Vertical"/>
+        <ScrollViewer Margin="0,150,0,0" VerticalScrollBarVisibility="Auto" Grid.ColumnSpan="2" HorizontalContentAlignment="Stretch">
+            <StackPanel x:Name="FieldPanel" Orientation="Vertical"/>
         </ScrollViewer>
     </Grid>
 </Window>

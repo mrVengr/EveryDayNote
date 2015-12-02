@@ -16,5 +16,9 @@
             this.ID = Guid.NewGuid();
             NoteParts.Add(this);
         }
+
+        public override void Encrypt()
+        {
+        }
     }
 }

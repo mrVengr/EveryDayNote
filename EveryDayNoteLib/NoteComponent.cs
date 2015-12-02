@@ -32,5 +32,9 @@
         public override void Create()
         { 
         }
+
+        public override void Encrypt()
+        {
+        }
     }
 }

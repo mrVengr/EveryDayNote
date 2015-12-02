@@ -13,7 +13,7 @@
     using System.Windows.Media;
     using System.Windows.Media.Imaging;
     using System.Windows.Shapes;
-    using EveryDayNote.UserControls;
+    using UserControls;
     using EveryDayNoteLib;
     
     /// <summary>
@@ -23,6 +23,7 @@
     {
         private Note note = new Note();
         private NoteComponent component = new NoteComponent();
+        private TextEncrypt Encrypt = new TextEncrypt();
 
         public NotePage()
         {
@@ -35,8 +36,12 @@
 
         private void Text_Click(object sender, RoutedEventArgs e)
         {
-            this.component.Add(new TextNote());
+            TextNote TN = new TextNote();
+            Encrypt.SetComponent(TN);
+            this.component.Add(TN);
             TextPartUC tP = new TextPartUC();
+            tP.InitializeComponent();
+            TN.tp = tP;
             tP.HorizontalAlignment = System.Windows.HorizontalAlignment.Stretch;
             FieldPanel.Children.Add(tP);
         }
@@ -45,6 +50,7 @@
         {
             this.component.Add(new VoNote());
             AudioPartUC aP = new AudioPartUC();
+            aP.InitializeComponent();
             aP.HorizontalAlignment = System.Windows.HorizontalAlignment.Stretch;
             FieldPanel.Children.Add(aP);
         }
@@ -53,6 +59,7 @@
         {
             this.component.Add(new VideoNote());
             VideoPartUC vP = new VideoPartUC();
+            vP.InitializeComponent();
             vP.HorizontalAlignment = System.Windows.HorizontalAlignment.Stretch;
             FieldPanel.Children.Add(vP);
         }
@@ -61,6 +68,7 @@
         {
             this.component.Add(new PictNote());
             PicturePartUC pP = new PicturePartUC();
+            pP.InitializeComponent();
             pP.HorizontalAlignment = System.Windows.HorizontalAlignment.Stretch;
             FieldPanel.Children.Add(pP);
         }
@@ -69,6 +77,7 @@
         {
             this.note.NoteComponent = this.component;
             this.note.GetProxy();
+            Encrypt.Encrypt();
         }
     }
 }

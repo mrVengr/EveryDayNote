@@ -12,3 +12,5 @@ D:\Projects\EveryDayNote\EveryDayNote\EveryDayNoteLib\bin\Debug\EveryDayNoteLib.
 D:\Projects\EveryDayNote\EveryDayNote\EveryDayNoteLib\obj\Debug\EveryDayNoteLib.csprojResolveAssemblyReference.cache
 D:\Projects\EveryDayNote\EveryDayNote\EveryDayNoteLib\obj\Debug\EveryDayNoteLib.dll
 D:\Projects\EveryDayNote\EveryDayNote\EveryDayNoteLib\obj\Debug\EveryDayNoteLib.pdb
+D:\Projects\EveryDayNote\EveryDayNote\EveryDayNoteLib\bin\Debug\UserControls.dll
+D:\Projects\EveryDayNote\EveryDayNote\EveryDayNoteLib\bin\Debug\UserControls.pdb
