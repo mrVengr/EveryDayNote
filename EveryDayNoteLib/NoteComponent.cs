@@ -6,6 +6,7 @@
     using System.Linq;
     using System.Text;
     using System.Threading.Tasks;
+    using System.Windows;
 
     public class NoteComponent : NotePart
     {
@@ -40,5 +41,11 @@
         public override void Encrypt()
         {
         }
+
+        public override UIElement RestoreData()
+        {
+            return null;
+        }
+
     }
 }

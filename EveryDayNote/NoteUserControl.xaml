@@ -3,48 +3,37 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             mc:Ignorable="d" 
-             d:DesignHeight="300" d:DesignWidth="300" Width="220" Height="150" Padding="5">
-    <Grid>
-        <Grid.Background>
-            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                <GradientStop Color="#FFFFF6F6" Offset="0"/>
-                <GradientStop Color="#FF666666" Offset="1"/>
-                <GradientStop Color="#FFA4A0A0" Offset="0.773"/>
-            </LinearGradientBrush>
-        </Grid.Background>
-        <Label Content="Note" Margin="10,10,10,0" VerticalAlignment="Top" Height="41" FontSize="18" HorizontalContentAlignment="Center">
-            <Label.Background>
-                <RadialGradientBrush>
-                    <GradientStop Color="White"/>
-                    <GradientStop Color="#FFC8CBFF" Offset="1"/>
-                </RadialGradientBrush>
-            </Label.Background>
-        </Label>
-        <Ellipse x:Name="AudioEl" HorizontalAlignment="Left" Height="51" Margin="10,56,0,0" Stroke="#FF44662E" VerticalAlignment="Top" Width="65">
-            <Ellipse.Effect>
-                <DropShadowEffect Color="#FFDDF797"/>
-            </Ellipse.Effect>
-            <Ellipse.Fill>
-                <ImageBrush ImageSource="pack://application:,,,/Images/Audio.jpg" Stretch="Uniform"/>
-            </Ellipse.Fill>
-        </Ellipse>
-        <Ellipse x:Name="PictureEl" HorizontalAlignment="Left" Height="51" Margin="73,79,0,0" Stroke="#FF44662E" VerticalAlignment="Top" Width="65">
-            <Ellipse.Effect>
-                <DropShadowEffect Color="#FFDDF797"/>
-            </Ellipse.Effect>
-            <Ellipse.Fill>
-                <ImageBrush ImageSource="pack://application:,,,/Images/Picture.png" Stretch="Uniform"/>
-            </Ellipse.Fill>
-        </Ellipse>
-        <Ellipse x:Name="VideoEl" HorizontalAlignment="Left" Height="51" Margin="135,56,0,0" Stroke="#FF44662E" VerticalAlignment="Top" Width="65" RenderTransformOrigin="2.446,0.529">
-            <Ellipse.Effect>
-                <DropShadowEffect Color="#FFDDF797"/>
-            </Ellipse.Effect>
-            <Ellipse.Fill>
-                <ImageBrush ImageSource="pack://application:,,,/Images/Video.png" Stretch="Uniform"/>
-            </Ellipse.Fill>
-        </Ellipse>
+             mc:Ignorable="d" Background="Transparent"
+             d:DesignHeight="300" d:DesignWidth="300" Width="220" Height="150" Padding="5" MouseLeftButtonUp="UserControl_MouseLeftButtonUp" >
+    <Border Name="Main" CornerRadius="0, 30, 0, 0" BorderThickness="2" BorderBrush="#FF171D59">
+        <Grid>
+            <Label Background="{StaticResource BackgroundGradientBrush}" BorderThickness="2" BorderBrush="{StaticResource DarkBorderGradientBrush}" Content="Note" Margin="10,10,10,0" VerticalAlignment="Top" Height="41" FontSize="18" HorizontalContentAlignment="Center">
+            </Label>
+            <Rectangle x:Name="AudioEl" HorizontalAlignment="Left" Height="51" Margin="10,56,0,0" Stroke="#FF44662E" VerticalAlignment="Top" Width="65" StrokeThickness="0">
+                <Rectangle.Effect>
+                    <DropShadowEffect Color="White"/>
+                </Rectangle.Effect>
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="pack://application:,,,/Images/Audio.jpg" Stretch="Uniform"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle x:Name="PictureEl" HorizontalAlignment="Left" Height="51" Margin="73,79,0,0" Stroke="#FF44662E" VerticalAlignment="Top" Width="65" StrokeThickness="0">
+                <Rectangle.Effect>
+                    <DropShadowEffect Color="White"/>
+                </Rectangle.Effect>
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="pack://application:,,,/Images/Picture.png" Stretch="Uniform"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle x:Name="VideoEl" HorizontalAlignment="Left" Height="51" Margin="131,56,0,0" Stroke="#FF44662E" VerticalAlignment="Top" Width="65" RenderTransformOrigin="2.446,0.529" StrokeThickness="0">
+                <Rectangle.Effect>
+                    <DropShadowEffect Color="White"/>
+                </Rectangle.Effect>
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="pack://application:,,,/Images/Video.png" Stretch="Uniform"/>
+                </Rectangle.Fill>
+            </Rectangle>
 
-    </Grid>
+        </Grid>
+    </Border>
 </UserControl>

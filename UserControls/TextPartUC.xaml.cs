@@ -23,13 +23,25 @@
         public TextPartUC()
         {
             //this.InitializeComponent();
+            
+        }
+
+        public TextPartUC(string Data)
+        {
+            //this.InitializeComponent();
+            Text = Data;
         }
 
         public string Text;
 
         private void TextData_TextChanged(object sender, TextChangedEventArgs e)
         {
-            Text = TextData.Document.ToString();
+            Text = TextData.Text;
+        }
+
+        private void UserControl_Loaded(object sender, RoutedEventArgs e)
+        {
+            TextData.Text = Text;
         }
     }
 }

@@ -5,6 +5,7 @@
     using System.Linq;
     using System.Text;
     using System.Threading.Tasks;
+    using System.Windows;
 
     /// <summary>
     /// Note parts
@@ -39,11 +40,14 @@
 
         public abstract void Encrypt();
 
+        public abstract UIElement RestoreData();
+
         public void Save()
         {
             SetData();
             Encrypt();
         }
+
 
     }
 }

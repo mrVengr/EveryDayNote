@@ -17,7 +17,6 @@
         {
         }
 
-        static byte[] bytes = ASCIIEncoding.ASCII.GetBytes("ZeroCool");
         public override void Encrypt()
             {
                 //RSA Rsa = new RSA();
@@ -32,7 +31,7 @@
                         RSA.ImportParameters(RSA.ExportParameters(false));
   
                         
-                        byte[] Data = ByteConverter.GetBytes(base.Component.tp.Text);
+                        byte[] Data = ByteConverter.GetBytes(base.Component.tp.Text.ToString());
                         encryptedData = RSA.Encrypt(Data , false);
                     }
                     base.Component.Text = ByteConverter.GetString(encryptedData);
@@ -42,7 +41,7 @@
                 catch (CryptographicException e)
                 {
                     Console.WriteLine(e.Message);
-                    base.Component.Text = base.Component.tp.Text;
+                    base.Component.Text = base.Component.tp.Text.ToString();
                 }
                
             }
@@ -74,5 +73,11 @@
             public override void SetData()
             {
             }
+
+            public override UIElement RestoreData()
+            {
+                return null;
+            }
+
     }
 }

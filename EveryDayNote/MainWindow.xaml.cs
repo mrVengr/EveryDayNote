@@ -16,6 +16,7 @@
     using System.Windows.Shapes;
     using UserControls;
     using EveryDayNoteLib;
+    using System.Threading;
     
     /// <summary>
     /// Interaction logic for MainWindow
@@ -24,19 +25,70 @@
     {
         public MainWindow()
         {
+
             this.InitializeComponent();
+            double screenHeight = SystemParameters.FullPrimaryScreenHeight;
+            double screenWidth = SystemParameters.FullPrimaryScreenWidth;
+            this.Top = screenHeight/100;
+            this.Left = (screenWidth - this.Width); 
+
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            NotePage np = new NotePage();
-            np.ShowDialog();
+
+        }
+
+        private void Settings_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
+        {
+            if (AddNote.Opacity == 0)
+            {
+                AddNote.Opacity = 1;
+                LookCalendar.Opacity = 1;
+                Exit.Opacity = 1;
+            }
+            else
+            {
+
+                AddNote.Opacity = 0;
+                LookCalendar.Opacity = 0;
+                Exit.Opacity = 0;
+
+            }
+
+        }
+
+        public void RefreshTable()
+        {
             WrapP.Children.Clear();
             foreach (var item in NoteProxy.NotesPr)
             {
-                NoteUserControl noteUC = new NoteUserControl(item);
+                NoteUserControl noteUC = new NoteUserControl(item, this);
                 WrapP.Children.Add(noteUC);
             }
         }
+
+        private void AddNote_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
+        {
+            NotePage np = new NotePage(this);
+            np.Show();
+            AddNote.Opacity = 0;
+            LookCalendar.Opacity = 0;
+            Exit.Opacity = 0;
+        }
+
+        private void LookCalendar_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
+        {
+
+        }
+
+        private void Exit_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
+        {
+            Application app = Application.Current;
+            app.Shutdown(); 
+        }
+
+      
+
     }
 }

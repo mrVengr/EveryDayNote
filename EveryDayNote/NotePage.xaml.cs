@@ -24,10 +24,33 @@
         private Note note = new Note();
         private NoteComponent component = new NoteComponent();
         private TextEncrypt Encrypt = new TextEncrypt();
-
-        public NotePage()
+        private MainWindow MainW;
+        public NotePage(MainWindow MW)
         {
+            MainW = MW;
             this.InitializeComponent();
+        }
+
+        public NotePage(MainWindow MW, Note NP)
+        {
+            note = NP;
+            component = NP.NoteComponent;
+            foreach (NoteProxy item in NoteProxy.NotesPr)
+            {
+                if (item.Currentnote == this.note)
+                {
+                    NoteProxy.NotesPr.Remove(item);
+                    break;
+                }
+            }
+                
+            MainW = MW;
+            this.InitializeComponent();
+            FieldPanel.Children.Clear();
+            foreach (NotePart item in this.note.NoteComponent.Children)
+            {
+                FieldPanel.Children.Add(item.RestoreData());
+            }
         }
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
@@ -37,7 +60,7 @@
         private void Text_Click(object sender, RoutedEventArgs e)
         {
             TextNote TN = new TextNote();
-            Encrypt.SetComponent(TN);
+            //Encrypt.SetComponent(TN);
             this.component.Add(TN);
             TextPartUC tP = new TextPartUC();
             tP.InitializeComponent();
@@ -48,27 +71,33 @@
 
         private void Voice_Click(object sender, RoutedEventArgs e)
         {
-            this.component.Add(new VoNote());
+            VoNote VoN = new VoNote();
+            this.component.Add(VoN);
             AudioPartUC aP = new AudioPartUC();
             aP.InitializeComponent();
+            VoN.ap = aP;
             aP.HorizontalAlignment = System.Windows.HorizontalAlignment.Stretch;
             FieldPanel.Children.Add(aP);
         }
 
         private void Video_Click(object sender, RoutedEventArgs e)
         {
-            this.component.Add(new VideoNote());
+            VideoNote VN = new VideoNote();
+            this.component.Add(VN);
             VideoPartUC vP = new VideoPartUC();
             vP.InitializeComponent();
+            VN.vp = vP;
             vP.HorizontalAlignment = System.Windows.HorizontalAlignment.Stretch;
             FieldPanel.Children.Add(vP);
         }
 
         private void Picture_Click(object sender, RoutedEventArgs e)
         {
-            this.component.Add(new PictNote());
+            PictNote PN = new PictNote();
+            this.component.Add(PN);
             PicturePartUC pP = new PicturePartUC();
             pP.InitializeComponent();
+            PN.pictp = pP;
             pP.HorizontalAlignment = System.Windows.HorizontalAlignment.Stretch;
             FieldPanel.Children.Add(pP);
         }
@@ -77,7 +106,17 @@
         {
             this.note.NoteComponent = this.component;
             this.note.GetProxy();
-            Encrypt.Encrypt();
+            //Encrypt.Encrypt();
+            foreach (NotePart item in this.note.NoteComponent.Children)
+            {
+                item.SetData();
+            }
+            MainW.RefreshTable();
+        }
+
+        private void X_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
         }
     }
 }

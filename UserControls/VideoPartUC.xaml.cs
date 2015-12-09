@@ -24,5 +24,12 @@
         {
             //this.InitializeComponent();
         }
+
+        public MediaElement Media;
+
+        private void video_DataContextChanged(object sender, DependencyPropertyChangedEventArgs e)
+        {
+            Media = video;
+        }
     }
 }

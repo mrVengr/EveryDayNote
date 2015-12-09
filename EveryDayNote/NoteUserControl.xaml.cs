@@ -21,7 +21,9 @@ using EveryDayNoteLib;
     /// </summary>
     public partial class NoteUserControl : UserControl
     {
-        public NoteUserControl(NoteProxy note)
+        NoteProxy Note;
+        MainWindow MainW;
+        public NoteUserControl(NoteProxy note, MainWindow MW)
         {
             this.InitializeComponent();
 
@@ -51,6 +53,17 @@ using EveryDayNoteLib;
             {
                 VideoEl.Opacity = 1;
             }
+            Main.Background = note.Scb;
+            Main.BorderBrush = note.BorderColor;
+            Note = note;
+            MainW = MW;
+        }
+
+        private void UserControl_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
+        {
+            NotePage NP = new NotePage(MainW ,Note.Currentnote);
+            NP.Show();
+            
         }
     }
 }

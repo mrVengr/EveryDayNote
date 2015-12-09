@@ -2,16 +2,13 @@
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
-             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" Padding="5"
              mc:Ignorable="d" d:DesignWidth="300" VerticalAlignment="Top">
-    <Grid>
-        <Grid.Background>
-            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                <GradientStop Color="{DynamicResource {x:Static SystemColors.ActiveBorderColorKey}}"/>
-                <GradientStop Color="White" Offset="1"/>
-            </LinearGradientBrush>
-        </Grid.Background>
-        <Slider Margin="10,47,10,10" VerticalAlignment="Top" Width="280"/>
-        <Button x:Name="AddBtn" Content="Add" Margin="0,0,10,37" VerticalAlignment="Bottom" HorizontalAlignment="Right"/>
+    <UserControl.Effect>
+        <DropShadowEffect Color="#FF363636" BlurRadius="3"/>
+    </UserControl.Effect>
+        <Grid Background="{StaticResource GrayBlueGradientBrush}">
+        <Slider Margin="10,57,10,10" VerticalAlignment="Top"/>
+        <Button x:Name="AddBtn" Content="Add" VerticalAlignment="Top" Width="75" HorizontalAlignment="Right" FontFamily="Tahoma" FontWeight="Bold"/>
     </Grid>
 </UserControl>

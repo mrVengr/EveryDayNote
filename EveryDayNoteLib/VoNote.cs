@@ -5,12 +5,16 @@
     using System.Linq;
     using System.Text;
     using System.Threading.Tasks;
+    using System.Windows;
+    using UserControls;
 
     /// <summary>
     /// audio note
     /// </summary>
     public class VoNote : NotePart
     {
+        public AudioPartUC ap = new AudioPartUC();
+
         public override void Create()
         {
             this.ID = Guid.NewGuid();
@@ -23,6 +27,15 @@
 
         public override void SetData()
         {
+        }
+
+        public override UIElement RestoreData()
+        {
+            AudioPartUC AP = new AudioPartUC();
+            AP.InitializeComponent();
+            AP.HorizontalAlignment = System.Windows.HorizontalAlignment.Stretch;
+            return AP;
+
         }
     }
 }
