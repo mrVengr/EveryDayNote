@@ -3,11 +3,10 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             mc:Ignorable="d" Background="Transparent"
-             d:DesignHeight="300" d:DesignWidth="300" Width="220" Height="150" Padding="5" MouseLeftButtonUp="UserControl_MouseLeftButtonUp" >
-    <Border Name="Main" CornerRadius="0, 30, 0, 0" BorderThickness="2" BorderBrush="#FF171D59">
+             mc:Ignorable="d" Background="Transparent" d:DesignWidth="300" Width="220" Height="204" Padding="5" MouseLeftButtonUp="UserControl_MouseLeftButtonUp" Loaded="UserControl_Loaded" >
+    <Border Name="Main" BorderThickness="2" CornerRadius="7" BorderBrush="#FF28307E">
         <Grid>
-            <Label Background="{StaticResource BackgroundGradientBrush}" BorderThickness="2" BorderBrush="{StaticResource DarkBorderGradientBrush}" Content="Note" Margin="10,10,10,0" VerticalAlignment="Top" Height="41" FontSize="18" HorizontalContentAlignment="Center">
+            <Label BorderThickness="2" Content="Note" Margin="10,10,10,0" VerticalAlignment="Top" Height="41" FontSize="18" HorizontalContentAlignment="Center">
             </Label>
             <Rectangle x:Name="AudioEl" HorizontalAlignment="Left" Height="51" Margin="10,56,0,0" Stroke="#FF44662E" VerticalAlignment="Top" Width="65" StrokeThickness="0">
                 <Rectangle.Effect>
@@ -33,6 +32,7 @@
                     <ImageBrush ImageSource="pack://application:,,,/Images/Video.png" Stretch="Uniform"/>
                 </Rectangle.Fill>
             </Rectangle>
+            <DatePicker Name="DatePick" Margin="10,0,10,10" VerticalAlignment="Bottom" Width="186" IsEnabled="False"/>
 
         </Grid>
     </Border>

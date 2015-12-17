@@ -14,3 +14,5 @@ D:\Projects\EveryDayNote\EveryDayNote\EveryDayNoteLib\obj\Debug\EveryDayNoteLib.
 D:\Projects\EveryDayNote\EveryDayNote\EveryDayNoteLib\obj\Debug\EveryDayNoteLib.pdb
 D:\Projects\EveryDayNote\EveryDayNote\EveryDayNoteLib\bin\Debug\UserControls.dll
 D:\Projects\EveryDayNote\EveryDayNote\EveryDayNoteLib\bin\Debug\UserControls.pdb
+D:\Projects\EveryDayNote\EveryDayNoteLib\bin\Debug\UserControls.dll
+D:\Projects\EveryDayNote\EveryDayNoteLib\bin\Debug\UserControls.pdb

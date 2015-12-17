@@ -3,19 +3,14 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             mc:Ignorable="d" Padding="5"
+             mc:Ignorable="d" Padding="2"
              d:DesignHeight="300" d:DesignWidth="300" VerticalAlignment="Top" Height="300" Loaded="UserControl_Loaded">
-    <UserControl.Effect>
-        <DropShadowEffect Color="#FF363636" BlurRadius="3"/>
-    </UserControl.Effect>
-        <Grid Background="{StaticResource GrayBlueGradientBrush}">
+    <Grid TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        Background="{DynamicResource MaterialDesignPaper}">
 
-        <Button x:Name="AddBtn" Content="Add" HorizontalAlignment="Right" VerticalAlignment="Bottom" Width="75" FontFamily="Tahoma" FontWeight="Bold" Click="AddBtn_Click"/>
-        <Border BorderThickness="3" Margin="10,10,10,60" BorderBrush="{StaticResource BorderGradientBrush}" CornerRadius="5">
-            <Border.Effect>
-                <DropShadowEffect ShadowDepth="4"/>
-            </Border.Effect>
-            <Image Name="image" Margin="10" DataContextChanged="image_DataContextChanged" />
+        <Button x:Name="AddBtn" Margin="5" Content="Add" HorizontalAlignment="Right" VerticalAlignment="Bottom" Width="75" FontFamily="Tahoma" FontWeight="Bold" Click="AddBtn_Click"/>
+        <Border BorderThickness="3" Margin="10,10,10,60">
+            <Image Name="image" DataContextChanged="image_DataContextChanged" />
             </Border>
         </Grid>
 </UserControl>

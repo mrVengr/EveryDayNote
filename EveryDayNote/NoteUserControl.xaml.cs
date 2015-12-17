@@ -65,5 +65,10 @@ using EveryDayNoteLib;
             NP.Show();
             
         }
+
+        private void UserControl_Loaded(object sender, RoutedEventArgs e)
+        {
+            DatePick.SelectedDate = Note.DateNote;
+        }
     }
 }

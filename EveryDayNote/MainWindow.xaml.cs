@@ -34,12 +34,17 @@
 
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        public void RefreshTable()
         {
-
+            WrapP.Children.Clear();
+            foreach (var item in NoteProxy.NotesPr)
+            {
+                NoteUserControl noteUC = new NoteUserControl(item, this);
+                WrapP.Children.Add(noteUC);
+            }
         }
 
-        private void Settings_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
+        private void Settings_Click(object sender, RoutedEventArgs e)
         {
             if (AddNote.Opacity == 0)
             {
@@ -55,20 +60,9 @@
                 Exit.Opacity = 0;
 
             }
-
         }
 
-        public void RefreshTable()
-        {
-            WrapP.Children.Clear();
-            foreach (var item in NoteProxy.NotesPr)
-            {
-                NoteUserControl noteUC = new NoteUserControl(item, this);
-                WrapP.Children.Add(noteUC);
-            }
-        }
-
-        private void AddNote_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
+        private void AddNote_Click(object sender, RoutedEventArgs e)
         {
             NotePage np = new NotePage(this);
             np.Show();
@@ -77,12 +71,16 @@
             Exit.Opacity = 0;
         }
 
-        private void LookCalendar_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
+        private void LookCalendar_Click(object sender, RoutedEventArgs e)
         {
-
+            DateRange DR = new DateRange(this);
+            DR.ShowDialog();
+            AddNote.Opacity = 0;
+            LookCalendar.Opacity = 0;
+            Exit.Opacity = 0;
         }
 
-        private void Exit_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
+        private void Exit_Click(object sender, RoutedEventArgs e)
         {
             Application app = Application.Current;
             app.Shutdown(); 

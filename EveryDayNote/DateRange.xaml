@@ -1,0 +1,18 @@
+﻿<Window x:Class="EveryDayNote.DateRange"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="DateRange" Height="300" Width="300"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        Background="{DynamicResource MaterialDesignPaper}" WindowStyle="ToolWindow">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="25"/>
+            <RowDefinition Height="122*"/>
+        </Grid.RowDefinitions>
+        <DatePicker Name="Date" HorizontalAlignment="Left" SelectedDateChanged="DatePicker_SelectedDateChanged"/>
+        <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.Row="1">
+            <WrapPanel Name="Notes" UseLayoutRounding="True">
+            </WrapPanel>
+        </ScrollViewer>
+    </Grid>
+</Window>

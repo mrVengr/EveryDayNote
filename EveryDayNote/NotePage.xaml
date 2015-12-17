@@ -1,29 +1,37 @@
-﻿<Window
+﻿<Window 
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:local="clr-namespace:EveryDayNote" x:Class="EveryDayNote.NotePage"
-        Title="NotePage" Height="600" Width="300" Loaded="Window_Loaded" Closing="Window_Closing" ResizeMode="NoResize" WindowStyle="None">
-    <Grid Background="{StaticResource BackgroundGradientBrush}" >
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="0*"/>
-            <ColumnDefinition/>
-        </Grid.ColumnDefinitions>
-        <Menu Height="26"  VerticalAlignment="Top" Grid.ColumnSpan="2">
+        Title="NotePage" Height="600" Width="300" Closing="Window_Closing" 
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        TextElement.FontWeight="Medium"
+        TextElement.FontSize="14" MinHeight="250" MinWidth="300"
+        WindowStyle="ToolWindow" Loaded="Window_Loaded">
+    <Border>
+    <Grid>
+        <Grid.RowDefinitions>
+                <RowDefinition Height="48"/>
+                <RowDefinition Height="65"/>
+                <RowDefinition Height="88*"/>
+        </Grid.RowDefinitions>
+                <Menu VerticalAlignment="Top" Grid.Row="0">
             <MenuItem Header="Text" x:Name="Text" Click="Text_Click" />
             <MenuItem Header="Audio"  x:Name="Voice" Click="Voice_Click"/>
             <MenuItem Header="Video" x:Name="Video" Click="Video_Click"/>
             <MenuItem Header="Picture" x:Name="Picture" Click="Picture_Click"/>
-            <MenuItem Header="X" x:Name="X" Click="X_Click" Margin="95,2,0,0" HorizontalAlignment="Right">
-                <MenuItem.Background>
-                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                        <GradientStop Color="#FFBB0505" Offset="0.004"/>
-                        <GradientStop Color="#FFE45050" Offset="1"/>
-                    </LinearGradientBrush>
-                </MenuItem.Background>
-            </MenuItem>
         </Menu>
-        <ScrollViewer Margin="0,26,0,0" VerticalScrollBarVisibility="Auto" Grid.ColumnSpan="2" HorizontalContentAlignment="Stretch">
-            <StackPanel x:Name="FieldPanel" Orientation="Vertical"/>
+            <StackPanel Background="{DynamicResource MaterialDesignPaper}" Grid.Row="1">
+                <DatePicker Name="Date" Margin="2" SelectedDateChanged="Date_SelectedDateChanged" >
+                    
+                </DatePicker>
+                <TextBox Margin="2">
+                    
+                </TextBox>
+            </StackPanel>
+                <ScrollViewer Padding="2" VerticalScrollBarVisibility="Auto" HorizontalContentAlignment="Stretch" Grid.Row="2">
+            <StackPanel  x:Name="FieldPanel" Orientation="Vertical"/>
         </ScrollViewer>
+
     </Grid>
+    </Border>
 </Window>

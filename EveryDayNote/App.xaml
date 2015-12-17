@@ -1,71 +1,19 @@
-﻿<Application x:Class="EveryDayNote.App"
+﻿<Application x:Class="MaterialDesignColors.WpfExample.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-        <LinearGradientBrush  x:Key="BorderGradientBrush"
-    StartPoint="0,0" EndPoint="1,0">
-            <GradientStop Color="WhiteSmoke" Offset="0.2" />
-            <GradientStop Color="#19F5F5F5" Offset="0.4" />
-            <GradientStop Color="WhiteSmoke" Offset="0.5" />
-            <GradientStop Color="#19F5F5F5" Offset="0.75" />
-            <GradientStop Color="WhiteSmoke" Offset="0.9" />
-        </LinearGradientBrush>
 
-        <LinearGradientBrush  x:Key="DarkBorderGradientBrush"
-    StartPoint="0,0" EndPoint="1,0">
-            <GradientStop Color="#FF464646" Offset="0.2" />
-            <GradientStop Color="#19F5F5F5" Offset="0.5" />
-            <GradientStop Color="#FF464646" Offset="0.9" />
-        </LinearGradientBrush>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
 
-        <LinearGradientBrush  x:Key="GrayBlueGradientBrush"
-    StartPoint="0,0" EndPoint="1,0" >
-            <GradientStop Color="White" Offset="0" />
-            <GradientStop Color="#FFDADADA" Offset="0.5" />
-            <GradientStop Color="White" Offset="0.9" />
-        </LinearGradientBrush>
-        <LinearGradientBrush x:Key="BackgroundGradientBrush" 
-    StartPoint="0,0" EndPoint="1,1">
-            <GradientStop Color="DarkGray" Offset="0" />
-            <GradientStop Color="#CCCCFF" Offset="0.5" />
-            <GradientStop Color="DarkGray" Offset="1" />
-        </LinearGradientBrush>
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Dark.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Defaults.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Primary/MaterialDesignColor.Blue.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Accent/MaterialDesignColor.Lime.xaml" />
 
-        <LinearGradientBrush x:Key="ButtonGradientBrush" 
-    StartPoint="0,0" EndPoint="1,1">
-            <GradientStop Color="#FF325DF0" Offset="0" />
-            <GradientStop Color="#FF325DF0" Offset="0.5" />
-            <GradientStop Color="#FF325DF0" Offset="1" />
-        </LinearGradientBrush>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
 
-        <Style TargetType="{x:Type Button}">
-            <Setter Property="Background" 
-      Value="{StaticResource ButtonGradientBrush}" />
-            <Setter Property="Width" Value="80" />
-            <Setter Property="Template">
-                <Setter.Value>
-                    <ControlTemplate TargetType="Button">
-                        <Grid Width="{TemplateBinding Width}" 
-     Height="{TemplateBinding Height}" ClipToBounds="True">
-
-                            <Rectangle x:Name="innerRectangle" 
-        HorizontalAlignment="Stretch" 
-        VerticalAlignment="Stretch" Stroke="Transparent" 
-        StrokeThickness="20" 
-        Fill="{TemplateBinding Background}" 
-        RadiusX="10" RadiusY="10"   />
-
-                            <!-- Present Content (text) of the button. -->
-                            <DockPanel Name="myContentPresenterDockPanel">
-                                <ContentPresenter x:Name="myContentPresenter" Margin=" 20"
-          Content="{TemplateBinding  Content}" 
-          TextBlock.Foreground="Black" />
-                            </DockPanel>
-                        </Grid>
-                    </ControlTemplate>
-                </Setter.Value>
-            </Setter>
-        </Style>
     </Application.Resources>
 </Application>

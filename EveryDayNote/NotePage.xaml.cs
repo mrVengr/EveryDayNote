@@ -25,6 +25,7 @@
         private NoteComponent component = new NoteComponent();
         private TextEncrypt Encrypt = new TextEncrypt();
         private MainWindow MainW;
+        bool IsNew = true;
         public NotePage(MainWindow MW)
         {
             MainW = MW;
@@ -43,7 +44,6 @@
                     break;
                 }
             }
-                
             MainW = MW;
             this.InitializeComponent();
             FieldPanel.Children.Clear();
@@ -51,10 +51,7 @@
             {
                 FieldPanel.Children.Add(item.RestoreData());
             }
-        }
-
-        private void Window_Loaded(object sender, RoutedEventArgs e)
-        {
+            IsNew = false;
         }
 
         private void Text_Click(object sender, RoutedEventArgs e)
@@ -106,7 +103,6 @@
         {
             this.note.NoteComponent = this.component;
             this.note.GetProxy();
-            //Encrypt.Encrypt();
             foreach (NotePart item in this.note.NoteComponent.Children)
             {
                 item.SetData();
@@ -114,9 +110,27 @@
             MainW.RefreshTable();
         }
 
-        private void X_Click(object sender, RoutedEventArgs e)
+        private void Date_SelectedDateChanged(object sender, SelectionChangedEventArgs e)
         {
-            this.Close();
+            DateTime? date = Date.SelectedDate;
+            if (date == null)
+            {
+            }
+            else
+            {
+                note.DateNote = date.Value;
+            }
         }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            if (!IsNew)
+            {
+                Date.SelectedDate = note.DateNote;
+            }
+        }
+
+
+
     }
 }

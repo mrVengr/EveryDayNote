@@ -43,3 +43,7 @@ D:\Projects\EveryDayNote\EveryDayNote\obj\Release\EveryDayNote.g.resources
 D:\Projects\EveryDayNote\EveryDayNote\obj\Release\EveryDayNote.Properties.Resources.resources
 D:\Projects\EveryDayNote\EveryDayNote\obj\Release\EveryDayNote.csproj.GenerateResource.Cache
 D:\Projects\EveryDayNote\EveryDayNote\obj\Release\App.baml
+D:\Projects\EveryDayNote\EveryDayNote\bin\Release\MaterialDesignColors.dll
+D:\Projects\EveryDayNote\EveryDayNote\bin\Release\MaterialDesignThemes.Wpf.dll
+D:\Projects\EveryDayNote\EveryDayNote\obj\Release\DateRange.baml
+D:\Projects\EveryDayNote\EveryDayNote\obj\Release\DateRange.g.cs

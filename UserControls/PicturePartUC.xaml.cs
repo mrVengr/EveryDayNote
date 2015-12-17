@@ -47,13 +47,11 @@
         {
             Microsoft.Win32.OpenFileDialog dlg = new Microsoft.Win32.OpenFileDialog();
 
-            // Set filter for file extension and default file extension
             dlg.DefaultExt = ".jpg";
-            dlg.Filter = "Pictures (.jpg)|*.jpg | PNG.Files (.png)|*.png";
+            dlg.Filter = "Pictures(.jpg)|*.jpg | PNG.Files(.png) | *.png";
             Nullable<bool> result = dlg.ShowDialog();
             if (result == true)
             {
-                // Open document
                 FileInfo fileInfo = new FileInfo(dlg.FileName);
                 BitmapImage loadImage = new BitmapImage();
                     loadImage.BeginInit();

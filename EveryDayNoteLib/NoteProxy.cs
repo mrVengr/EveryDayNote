@@ -19,18 +19,27 @@ using System.Windows.Media;
         public Note Currentnote;
         private SolidColorBrush scb;
         private SolidColorBrush borderColor;
+        private DateTime dateNote;
+
+        public DateTime DateNote
+        {
+            get { return dateNote; }
+            set { dateNote = value; }
+        }
+        
 
         public NoteProxy(Note note_)
         {
+            DateNote = note_.DateNote;
             Random Rnd = new Random();
-            byte R = (byte)(Rnd.Next(8, 12) * 20);
+            byte R = (byte)(Rnd.Next(2, 7) * 20);
+            byte B = (byte)(Rnd.Next(2, 7) * 20);
             byte G = (byte)(Rnd.Next(8, 12) * 20);
-            byte B = (byte)(Rnd.Next(8, 12) * 20);
             SolidColorBrush SCB = new SolidColorBrush();
             SCB.Color = Color.FromArgb(255, R, G, B);
             Scb = SCB;
             SolidColorBrush SCBBorder = new SolidColorBrush();
-            SCBBorder.Color = Color.FromArgb(255, (byte)(R - 120), (byte)(G - 120), (byte)(B - 120));
+            SCBBorder.Color = Color.FromArgb(255, (byte)(R - 20), (byte)(G - 20), (byte)(B - 20));
             BorderColor = SCBBorder;
             NotesPr.Add(this);
             this.Currentnote = note_;

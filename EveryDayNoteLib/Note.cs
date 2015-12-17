@@ -26,6 +26,15 @@
             }
         }
 
+        private DateTime dateNote;
+
+        public DateTime DateNote
+        {
+            get { return dateNote; }
+            set { dateNote = value; }
+        }
+        
+
         public void GetProxy()
         {
             NoteProxy proxy = new NoteProxy(this);
