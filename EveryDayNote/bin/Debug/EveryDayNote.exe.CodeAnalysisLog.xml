@@ -1,31 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="c:\program files (x86)\microsoft visual studio 11.0\team tools\static analysis tools\fxcop\Xml\CodeAnalysisReport.xsl"?>
-<FxCopReport Version="11.0">
- <Namespaces>
-  <Namespace Name="EveryDayNote">
-   <Messages>
-    <Message Id="EveryDay" TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702" Status="Active" Created="2015-12-16 21:13:53Z" FixCategory="Breaking">
-     <Issue Name="NamespaceShouldBeDiscreteTerm" Certainty="80" Level="Error">The compound word 'EveryDay' in namespace name 'EveryDayNote' exists as a discrete term. If your usage is intended to be single word, case it as 'Everyday'.</Issue>
-    </Message>
-   </Messages>
-  </Namespace>
- </Namespaces>
+<?xml-stylesheet type="text/xsl" href="c:\program files (x86)\microsoft visual studio 14.0\team tools\static analysis tools\fxcop\Xml\CodeAnalysisReport.xsl"?>
+<FxCopReport Version="14.0">
  <Targets>
   <Target Name="D:\Projects\EveryDayNote\EveryDayNote\bin\Debug\EveryDayNote.exe">
    <Modules>
     <Module Name="everydaynote.exe">
      <Messages>
-      <Message TypeName="AssembliesShouldHaveValidStrongNames" Category="Microsoft.Design" CheckId="CA2210" Status="Active" Created="2015-12-16 21:13:53Z" FixCategory="NonBreaking">
-       <Issue Name="NoStrongName" Certainty="95" Level="CriticalError">Sign 'EveryDayNote.exe' with a strong name key.</Issue>
+      <Message TypeName="AssembliesShouldHaveValidStrongNames" Category="Microsoft.Design" CheckId="CA2210" Status="Active" Created="2015-12-27 07:30:40Z" FixCategory="NonBreaking">
+       <Issue Name="NoStrongName" Certainty="95" Level="CriticalError">Подпишите 'EveryDayNote.exe' с использованием ключа строгого имени.</Issue>
       </Message>
-      <Message Id="EveryDay" TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702" Status="Active" Created="2015-12-16 21:13:53Z" FixCategory="Breaking">
-       <Issue Name="AssemblyShouldBeDiscreteTerm" Certainty="80" Level="Error">The compound word 'EveryDay' in assembly name 'EveryDayNote.exe' exists as a discrete term. If your usage is intended to be single word, case it as 'Everyday'.</Issue>
+      <Message TypeName="MarkAssembliesWithClsCompliant" Category="Microsoft.Design" CheckId="CA1014" Status="Active" Created="2015-12-27 07:30:40Z" FixCategory="NonBreaking">
+       <Issue Certainty="95" Level="Error">Пометьте 'EveryDayNote.exe' как CLSCompliant(true), поскольку он предоставляет типы, видимые извне.</Issue>
       </Message>
-      <Message TypeName="MarkAssembliesWithClsCompliant" Category="Microsoft.Design" CheckId="CA1014" Status="Active" Created="2015-12-16 21:13:53Z" FixCategory="NonBreaking">
-       <Issue Certainty="95" Level="Error">Mark 'EveryDayNote.exe' with CLSCompliant(true) because it exposes externally visible types.</Issue>
-      </Message>
-      <Message TypeName="MarkAssembliesWithNeutralResourcesLanguage" Category="Microsoft.Performance" CheckId="CA1824" Status="Active" Created="2015-12-16 21:13:53Z" FixCategory="NonBreaking">
-       <Issue Certainty="95" Level="Warning">Because assembly 'EveryDayNote.exe' contains a ResX-based resource file, mark it with the NeutralResourcesLanguage attribute, specifying the language of the resources within the assembly. This could improve lookup performance the first time a resource is retrieved.</Issue>
+      <Message TypeName="MarkAssembliesWithNeutralResourcesLanguage" Category="Microsoft.Performance" CheckId="CA1824" Status="Active" Created="2015-12-27 07:30:40Z" FixCategory="NonBreaking">
+       <Issue Certainty="95" Level="Warning">Так как сборка 'EveryDayNote.exe' содержит файл ResX-ресурса, пометьте его атрибутом NeutralResourcesLanguage, указав язык ресурсов внутри сборки. Это может ускорить поиск ресурса при первом извлечении.</Issue>
       </Message>
      </Messages>
      <Namespaces>
@@ -35,28 +23,28 @@
          <Members>
           <Member Name="#.ctor(EveryDayNote.MainWindow)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
            <Messages>
-            <Message Id="MW" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2015-12-16 21:13:53Z" FixCategory="Breaking">
-             <Issue Name="MemberParameter" Certainty="85" Level="Error" Path="d:\Projects\EveryDayNote\EveryDayNote" File="NotePage.xaml.cs" Line="24">In member 'NotePage.NotePage(MainWindow)', correct the casing of 'MW' in parameter name 'MW' by changing it to 'mw'.</Issue>
+            <Message Id="MW" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2015-12-27 07:30:40Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="85" Level="Error" Path="D:\Projects\EveryDayNote\EveryDayNote" File="NotePage.xaml.cs" Line="24">В члене 'NotePage.NotePage(MainWindow)' исправьте прописные или строчные буквы строки "MW" в имени параметра 'MW', изменив ее на "mw".</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#.ctor(EveryDayNote.MainWindow,EveryDayNoteLib.Note)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
            <Messages>
-            <Message Id="MW" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2015-12-16 21:13:53Z" FixCategory="Breaking">
-             <Issue Name="MemberParameter" Certainty="85" Level="Error" Path="d:\Projects\EveryDayNote\EveryDayNote" File="NotePage.xaml.cs" Line="24">In member 'NotePage.NotePage(MainWindow, Note)', correct the casing of 'MW' in parameter name 'MW' by changing it to 'mw'.</Issue>
+            <Message Id="MW" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2015-12-27 07:30:40Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="85" Level="Error" Path="D:\Projects\EveryDayNote\EveryDayNote" File="NotePage.xaml.cs" Line="24">В члене 'NotePage.NotePage(MainWindow, Note)' исправьте прописные или строчные буквы строки "MW" в имени параметра 'MW', изменив ее на "mw".</Issue>
             </Message>
-            <Message Id="NP" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2015-12-16 21:13:53Z" FixCategory="Breaking">
-             <Issue Name="MemberParameter" Certainty="85" Level="Error" Path="d:\Projects\EveryDayNote\EveryDayNote" File="NotePage.xaml.cs" Line="24">In member 'NotePage.NotePage(MainWindow, Note)', correct the casing of 'NP' in parameter name 'NP' by changing it to 'np'.</Issue>
+            <Message Id="NP" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2015-12-27 07:30:40Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="85" Level="Error" Path="D:\Projects\EveryDayNote\EveryDayNote" File="NotePage.xaml.cs" Line="24">В члене 'NotePage.NotePage(MainWindow, Note)' исправьте прописные или строчные буквы строки "NP" в имени параметра 'NP', изменив ее на "np".</Issue>
             </Message>
-            <Message Id="1" TypeName="Validate arguments of public methods" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2015-12-16 21:13:53Z" FixCategory="DependsOnFix">
-             <Issue Certainty="75" Level="Warning" Path="d:\Projects\EveryDayNote\EveryDayNote" File="NotePage.xaml.cs" Line="38">In externally visible method 'NotePage.NotePage(MainWindow, Note)', validate parameter 'NP' before using it.</Issue>
+            <Message Id="1" TypeName="Проверить аргументы или открытые методы" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2015-12-27 07:30:40Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="D:\Projects\EveryDayNote\EveryDayNote" File="NotePage.xaml.cs" Line="38">В видимом извне методе 'NotePage.NotePage(MainWindow, Note)' проверьте параметр 'NP' перед его использованием.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#Encrypt" Kind="Field" Static="False" Accessibility="Private" ExternallyVisible="False">
            <Messages>
-            <Message TypeName="AvoidUnusedPrivateFields" Category="Microsoft.Performance" CheckId="CA1823" Status="Active" Created="2015-12-16 21:13:53Z" FixCategory="NonBreaking">
-             <Issue Certainty="75" Level="Warning">It appears that field 'NotePage.Encrypt' is never used or is only ever assigned to. Use this field or remove it.</Issue>
+            <Message TypeName="AvoidUnusedPrivateFields" Category="Microsoft.Performance" CheckId="CA1823" Status="Active" Created="2015-12-27 07:30:40Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning">Вероятно, поле 'NotePage.Encrypt' нигде не используется, или ему только присваивается значение. Используйте это поле или удалите его.</Issue>
             </Message>
            </Messages>
           </Member>
@@ -66,11 +54,11 @@
          <Members>
           <Member Name="#.ctor(EveryDayNoteLib.NoteProxy,EveryDayNote.MainWindow)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
            <Messages>
-            <Message Id="MW" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2015-12-16 21:13:53Z" FixCategory="Breaking">
-             <Issue Name="MemberParameter" Certainty="85" Level="Error" Path="d:\Projects\EveryDayNote\EveryDayNote" File="NoteUserControl.xaml.cs" Line="26">In member 'NoteUserControl.NoteUserControl(NoteProxy, MainWindow)', correct the casing of 'MW' in parameter name 'MW' by changing it to 'mw'.</Issue>
+            <Message Id="MW" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2015-12-27 07:30:40Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="85" Level="Error" Path="D:\Projects\EveryDayNote\EveryDayNote" File="NoteUserControl.xaml.cs" Line="26">В члене 'NoteUserControl.NoteUserControl(NoteProxy, MainWindow)' исправьте прописные или строчные буквы строки "MW" в имени параметра 'MW', изменив ее на "mw".</Issue>
             </Message>
-            <Message Id="0" TypeName="Validate arguments of public methods" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2015-12-16 21:13:53Z" FixCategory="DependsOnFix">
-             <Issue Certainty="75" Level="Warning" Path="d:\Projects\EveryDayNote\EveryDayNote" File="NoteUserControl.xaml.cs" Line="30">In externally visible method 'NoteUserControl.NoteUserControl(NoteProxy, MainWindow)', validate parameter 'note' before using it.</Issue>
+            <Message Id="0" TypeName="Проверить аргументы или открытые методы" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2015-12-27 07:30:40Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="D:\Projects\EveryDayNote\EveryDayNote" File="NoteUserControl.xaml.cs" Line="30">В видимом извне методе 'NoteUserControl.NoteUserControl(NoteProxy, MainWindow)' проверьте параметр 'note' перед его использованием.</Issue>
             </Message>
            </Messages>
           </Member>
@@ -85,99 +73,88 @@
  </Targets>
  <Rules>
   <Rule TypeName="AssembliesShouldHaveValidStrongNames" Category="Microsoft.Design" CheckId="CA2210">
-   <Name>Assemblies should have valid strong names</Name>
-   <Description>Either the assembly has no strong name, an invalid one, or the strong name is valid only because of the computer configuration. The assembly should not be deployed in this state. The most common causes of this are: 1) The assembly's contents were modified after it was signed. 2) The signing process failed. 3) The assembly was delay-signed. 4) A registry key existed that allowed the check to pass (where it would not have otherwise).</Description>
-   <Resolution Name="NoStrongName">Sign {0} with a strong name key.</Resolution>
+   <Name>Сборки должны иметь допустимые строгие имена</Name>
+   <Description>Либо строгое имя у сборки отсутствует или недействительно, либо действительность строгого имени зависит от конфигурации компьютера. В этом состоянии не следует выполнять развертывание сборки. Наиболее общие причины этого: 1). После подписания содержимое сборки было изменено. 2). Сбой в процессе подписания. 3). Сборка была подписана с задержкой. 4). В реестре существует раздел, разрешивший успешное выполнение проверки (чего не было бы в противном случае).</Description>
+   <Resolution Name="NoStrongName">Подпишите {0} с использованием ключа строгого имени.</Resolution>
    <Owner />
-   <Url>http://msdn.microsoft.com/library/ms182127(VS.100).aspx</Url>
+   <Url>http://msdn.microsoft.com/library/ms182127.aspx</Url>
    <Email>[none]</Email>
    <MessageLevel Certainty="95">CriticalError</MessageLevel>
-   <File Name="designrules.dll" Version="11.0.0.0" />
+   <File Name="designrules.dll" Version="14.0.0.0" />
   </Rule>
   <Rule TypeName="AvoidUnusedPrivateFields" Category="Microsoft.Performance" CheckId="CA1823">
-   <Name>Avoid unused private fields</Name>
-   <Description>Private fields were detected that do not appear to be accessed within the assembly. If this violation fires in error, please send a problem report to the Visual Studio Code Analysis team.</Description>
-   <Resolution Name="Default">It appears that field {0} is never used or is only ever assigned to. Use this field or remove it.</Resolution>
+   <Name>Избегайте неиспользуемых частных полей</Name>
+   <Description>В сборке обнаружены частные поля, к которым не осуществляется доступ. Если это сообщение об этом нарушении выводится по ошибке, отправьте отчет о нем в группу анализа кода Visual Studio.</Description>
+   <Resolution Name="Default">Вероятно, поле {0} нигде не используется, или ему только присваивается значение. Используйте это поле или удалите его.</Resolution>
    <Owner />
-   <Url>http://msdn.microsoft.com/library/ms245042(VS.100).aspx</Url>
+   <Url>http://msdn.microsoft.com/library/ms245042.aspx</Url>
    <Email>[none]</Email>
    <MessageLevel Certainty="75">Warning</MessageLevel>
-   <File Name="performancerules.dll" Version="11.0.0.0" />
-  </Rule>
-  <Rule TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702">
-   <Name>Compound words should be cased correctly</Name>
-   <Description>Avoid creating compound words from terms which exist in the dictionary as discrete terms. Do not create a compound word such as 'StopWatch' or 'PopUp'. These terms are recognized in the dictionary and should be cased as 'Stopwatch' and 'Popup'.</Description>
-   <Resolution Name="AssemblyShouldBeDiscreteTerm">The compound word '{0}' in assembly name {1} exists as a discrete term. If your usage is intended to be single word, case it as '{2}'.</Resolution>
-   <Resolution Name="NamespaceShouldBeDiscreteTerm">The compound word '{0}' in namespace name '{1}' exists as a discrete term. If your usage is intended to be single word, case it as '{2}'.</Resolution>
-   <Owner />
-   <Url>http://msdn.microsoft.com/library/bb264474(VS.100).aspx</Url>
-   <Email>[none]</Email>
-   <MessageLevel Certainty="80">Error</MessageLevel>
-   <File Name="namingrules.dll" Version="11.0.0.0" />
+   <File Name="performancerules.dll" Version="14.0.0.0" />
   </Rule>
   <Rule TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709">
-   <Name>Identifiers should be cased correctly</Name>
-   <Description>Type, namespace, and member identifiers are Pascal-cased. Parameter identifiers are camel-cased. Two letter acronyms within these identifiers should be upper-cased, for example, use System.IO instead of System.Io. Acronyms of three or more letters should be Pascal-cased, for example, use System.Xml instead of System.XML. The pascal-casing convention capitalizes the first letter of each word, as in BackColor. The camel-casing convention formats the first letter of the first word in lowercase and capitalizes the first letter of all subsequent words, as in backgroundColor. Although it may be common practice for some two letter acronyms to not be fully capitalized, violations of this rule should not be excluded for this reason. For example, 'DbConnection', is common but incorrect; use DBConnection. A violation of this rule might be required for compatibility with existing, non-managed symbol schemes. In general, however, these symbols should not be visible outside the assembly that uses them.</Description>
-   <Resolution Name="MemberParameter">In member {0}, correct the casing of '{1}' in parameter name {2} by changing it to '{3}'.</Resolution>
+   <Name>Идентификаторы должны иметь правильное сочетание прописных и строчных букв</Name>
+   <Description>Идентификаторы типа, пространства имен и членов следуют стилю имен Pascal, а идентификаторы параметров используют "верблюжий" (camel) стиль имен. Двухсимвольный акроним в этих идентификаторах должен записываться прописными буквами, например, System.IO вместо System.Io. Трех- или более символьные акронимы должны следовать стилю Pascal, например, System.Xml вместо System.XML. По соглашению о стиле имен Pascal в составных словах прописной буквой выделяется первая буква каждого слова, например BackColor. По соглашению о "верблюжьем" стиле имен первая буква первого слова будет строчной, а первые буквы всех последующих слов будут прописными, например backgroundColor. Хотя на практике некоторые двухбуквенные акронимы часто не содержат две прописные буквы, правило остается в силе. Например, часто пишут "DbConnection", но это неправильно; пишите "DBConnection". Нарушение этого правила могло бы потребоваться для совместимости с существующими неуправляемыми схемами символов. В общем случае эти символы не должны быть видимы вне использующей их сборки.</Description>
+   <Resolution Name="MemberParameter">В члене {0} исправьте прописные или строчные буквы строки "{1}" в имени параметра {2}, изменив ее на "{3}".</Resolution>
    <Owner />
-   <Url>http://msdn.microsoft.com/library/ms182240(VS.100).aspx</Url>
+   <Url>http://msdn.microsoft.com/library/ms182240.aspx</Url>
    <Email>[none]</Email>
    <MessageLevel Certainty="85">Error</MessageLevel>
-   <File Name="namingrules.dll" Version="11.0.0.0" />
+   <File Name="namingrules.dll" Version="14.0.0.0" />
   </Rule>
   <Rule TypeName="MarkAssembliesWithClsCompliant" Category="Microsoft.Design" CheckId="CA1014">
-   <Name>Mark assemblies with CLSCompliantAttribute</Name>
-   <Description>Assemblies should explicitly state their CLS compliance using the CLSCompliant attribute. An assembly without this attribute is not CLS-compliant. Assemblies, modules, and types can be CLS-compliant even if some parts of the assembly, module, or type are not CLS-compliant. The following rules apply: 1) If the element is marked CLSCompliant, any noncompliant members must have the CLSCompliant attribute present with its argument set to false. 2) A comparable CLS-compliant alternative member must be supplied for each member that is not CLS-compliant.</Description>
-   <Resolution Name="Default">Mark {0} with CLSCompliant(true) because it exposes externally visible types.</Resolution>
+   <Name>Пометьте сборки атрибутом CLSCompliantAttribute</Name>
+   <Description>Сборки должны явно объявлять о своей CLS-совместимости при помощи атрибута CLSCompliant. Сборка без этого атрибута не является CLS-совместимой. Сборки, модули и типы могут быть CLS-совместимыми, даже если некоторые их части не являются CLS-совместимыми. Применимы следующие правила: 1). Если элемент помечен как CLSCompliant, все его несовместимые члены должны иметь атрибут CLSCompliant, аргументу которого установлено значение False. 2). Каждый CLS-несовместимый член должен быть дополнен сравнимым CLS-совместимым альтернативным членом.</Description>
+   <Resolution Name="Default">Пометьте {0} как CLSCompliant(true), поскольку он предоставляет типы, видимые извне.</Resolution>
    <Owner />
-   <Url>http://msdn.microsoft.com/library/ms182156(VS.100).aspx</Url>
+   <Url>http://msdn.microsoft.com/library/ms182156.aspx</Url>
    <Email>[none]</Email>
    <MessageLevel Certainty="95">Error</MessageLevel>
-   <File Name="designrules.dll" Version="11.0.0.0" />
+   <File Name="designrules.dll" Version="14.0.0.0" />
   </Rule>
   <Rule TypeName="MarkAssembliesWithNeutralResourcesLanguage" Category="Microsoft.Performance" CheckId="CA1824">
-   <Name>Mark assemblies with NeutralResourcesLanguageAttribute</Name>
-   <Description>The NeutralResourcesLanguage attribute informs the ResourceManager of the language used to render the neutral culture's resources for an assembly. When looking up resources in the same culture as the neutral resources language, the ResourceManager automatically uses the resources located in the main assembly, instead of searching for a satellite assembly with the current user interface culture for the current thread. This will improve lookup performance for the first resource you load and can reduce your working set.</Description>
-   <Resolution Name="Default">Because assembly {0} contains a ResX-based resource file, mark it with the NeutralResourcesLanguage attribute, specifying the language of the resources within the assembly. This could improve lookup performance the first time a resource is retrieved.</Resolution>
+   <Name>Помечайте сборки атрибутом NeutralResourcesLanguageAttribute</Name>
+   <Description>Атрибут NeutralResourcesLanguage оповещает ResourceManager о языке, используемом для объявления в сборке ресурсов, нейтральных по языку и региональным параметрам. При поиске ресурсов с теми же языком и региональными параметрами, что и нейтральные по языку ресурсы, ResourceManager автоматически использует ресурсы, расположенные в основной сборке, и не ищет вспомогательную сборку с текущими языком и региональными параметрами интерфейса пользователя для текущего потока. Это улучшает поиск первого загруженного ресурса и может уменьшить рабочие наборы.</Description>
+   <Resolution Name="Default">Так как сборка {0} содержит файл ResX-ресурса, пометьте его атрибутом NeutralResourcesLanguage, указав язык ресурсов внутри сборки. Это может ускорить поиск ресурса при первом извлечении.</Resolution>
    <Owner />
-   <Url>http://msdn.microsoft.com/library/bb385967(VS.100).aspx</Url>
+   <Url>http://msdn.microsoft.com/library/bb385967.aspx</Url>
    <Email>[none]</Email>
    <MessageLevel Certainty="95">Warning</MessageLevel>
-   <File Name="performancerules.dll" Version="11.0.0.0" />
+   <File Name="performancerules.dll" Version="14.0.0.0" />
   </Rule>
-  <Rule TypeName="Validate arguments of public methods" Category="Microsoft.Design" CheckId="CA1062">
-   <Name>Validate arguments of public methods</Name>
-   <Description>All reference arguments passed to externally visible methods should be checked against null (Nothing in VB). If appropriate, throw a System.ArgumentNullException when the argument is null.</Description>
-   <Resolution Name="Default">In externally visible method {0}, validate parameter '{1}' before using it.</Resolution>
+  <Rule TypeName="Проверить аргументы или открытые методы" Category="Microsoft.Design" CheckId="CA1062">
+   <Name>Проверить аргументы или открытые методы</Name>
+   <Description>Все аргументы ссылок, передаваемые внешним видимым методам должны проверяться на NULL (Nothing в VB). При необходимости вызывает исключение System.ArgumentNullException, если аргумент равен "null".</Description>
+   <Resolution Name="Default">В видимом извне методе {0} проверьте параметр '{1}' перед его использованием.</Resolution>
    <Owner>RuleOwner</Owner>
-   <Url>http://msdn.microsoft.com/library/ms182182(VS.100).aspx</Url>
+   <Url>http://msdn.microsoft.com/library/ms182182.aspx</Url>
    <Email />
    <MessageLevel Certainty="75">Warning</MessageLevel>
-   <File Name="dataflowrules.dll" Version="11.0.0.0" />
+   <File Name="dataflowrules.dll" Version="14.0.0.0" />
   </Rule>
  </Rules>
  <Localized>
-  <String Key="Category">Category</String>
-  <String Key="Certainty">Certainty</String>
-  <String Key="CollapseAll">Collapse All</String>
-  <String Key="CheckId">Check Id</String>
-  <String Key="Error">Error</String>
-  <String Key="Errors">error(s)</String>
-  <String Key="ExpandAll">Expand All</String>
-  <String Key="Help">Help</String>
-  <String Key="Line">Line</String>
-  <String Key="Messages">message(s)</String>
-  <String Key="LocationNotStoredInPdb">[Location not stored in Pdb]</String>
-  <String Key="Project">Project</String>
-  <String Key="Resolution">Resolution</String>
-  <String Key="Rule">Rule</String>
-  <String Key="RuleFile">Rule File</String>
-  <String Key="RuleDescription">Rule Description</String>
-  <String Key="Source">Source</String>
-  <String Key="Status">Status</String>
-  <String Key="Target">Target</String>
-  <String Key="Warning">Warning</String>
-  <String Key="Warnings">warning(s)</String>
-  <String Key="ReportTitle">Code Analysis Report</String>
+  <String Key="Category">Категория</String>
+  <String Key="Certainty">Достоверность</String>
+  <String Key="CollapseAll">Свернуть все</String>
+  <String Key="CheckId">ИД проверки</String>
+  <String Key="Error">Ошибка</String>
+  <String Key="Errors">ошибки</String>
+  <String Key="ExpandAll">Развернуть все</String>
+  <String Key="Help">Справка</String>
+  <String Key="Line">Строка</String>
+  <String Key="Messages">сообщения</String>
+  <String Key="LocationNotStoredInPdb">[расположение не сохранено в PDB]</String>
+  <String Key="Project">Проект</String>
+  <String Key="Resolution">Разрешение</String>
+  <String Key="Rule">Правило</String>
+  <String Key="RuleFile">Файл правил</String>
+  <String Key="RuleDescription">Описание правила</String>
+  <String Key="Source">Источник</String>
+  <String Key="Status">Состояние</String>
+  <String Key="Target">Цель</String>
+  <String Key="Warning">Предупреждение</String>
+  <String Key="Warnings">предупреждения</String>
+  <String Key="ReportTitle">Отчет по анализу кода</String>
  </Localized>
 </FxCopReport>

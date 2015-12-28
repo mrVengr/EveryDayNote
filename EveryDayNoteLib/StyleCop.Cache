@@ -53,7 +53,7 @@
     <violations />
   </sourcecode>
   <project key="-1637755033">
-    <configuration>DEBUG;TRACE</configuration>
+    <configuration>TRACE</configuration>
   </project>
   <sourcecode name="INote.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
@@ -358,7 +358,7 @@
     <timestamps>
       <styleCop>2015.10.21 16:43:19.230</styleCop>
       <settingsFile>2015.11.25 16:44:09.220</settingsFile>
-      <sourceFile>2015.12.06 13:34:33.759</sourceFile>
+      <sourceFile>2015.12.28 18:32:02.156</sourceFile>
       <parser>2015.10.21 16:43:19.230</parser>
       <StyleCop.CSharp.DocumentationRules>2015.10.21 16:43:19.230</StyleCop.CSharp.DocumentationRules>
       <StyleCop.CSharp.DocumentationRules.FilesHashCode>-1967927385</StyleCop.CSharp.DocumentationRules.FilesHashCode>
@@ -381,7 +381,7 @@
     <timestamps>
       <styleCop>2015.10.21 16:43:19.230</styleCop>
       <settingsFile>2015.11.25 16:44:09.220</settingsFile>
-      <sourceFile>2015.09.27 14:21:14.970</sourceFile>
+      <sourceFile>2015.10.28 15:31:41.116</sourceFile>
       <parser>2015.10.21 16:43:19.230</parser>
       <StyleCop.CSharp.DocumentationRules>2015.10.21 16:43:19.230</StyleCop.CSharp.DocumentationRules>
       <StyleCop.CSharp.DocumentationRules.FilesHashCode>-1967927385</StyleCop.CSharp.DocumentationRules.FilesHashCode>
@@ -404,7 +404,7 @@
     <timestamps>
       <styleCop>2015.10.21 16:43:19.230</styleCop>
       <settingsFile>2015.11.25 16:44:09.220</settingsFile>
-      <sourceFile>2015.09.27 14:21:14.971</sourceFile>
+      <sourceFile>2015.10.28 15:31:41.117</sourceFile>
       <parser>2015.10.21 16:43:19.230</parser>
       <StyleCop.CSharp.DocumentationRules>2015.10.21 16:43:19.230</StyleCop.CSharp.DocumentationRules>
       <StyleCop.CSharp.DocumentationRules.FilesHashCode>-1967927385</StyleCop.CSharp.DocumentationRules.FilesHashCode>
@@ -427,7 +427,7 @@
     <timestamps>
       <styleCop>2015.10.21 16:43:19.230</styleCop>
       <settingsFile>2015.11.25 16:44:09.220</settingsFile>
-      <sourceFile>2015.09.27 14:21:14.989</sourceFile>
+      <sourceFile>2015.10.28 15:31:41.122</sourceFile>
       <parser>2015.10.21 16:43:19.230</parser>
       <StyleCop.CSharp.DocumentationRules>2015.10.21 16:43:19.230</StyleCop.CSharp.DocumentationRules>
       <StyleCop.CSharp.DocumentationRules.FilesHashCode>-1967927385</StyleCop.CSharp.DocumentationRules.FilesHashCode>

@@ -46,7 +46,6 @@ D:\Projects\EveryDayNote\EveryDayNote\obj\Debug\NotePage.g.cs
 D:\Projects\EveryDayNote\EveryDayNote\obj\Debug\NoteUserControl.g.cs
 D:\Projects\EveryDayNote\EveryDayNote\obj\Debug\App.g.cs
 D:\Projects\EveryDayNote\EveryDayNote\obj\Debug\EveryDayNote_MarkupCompile.cache
-D:\Projects\EveryDayNote\EveryDayNote\obj\Debug\EveryDayNote_MarkupCompile.lref
 D:\Projects\EveryDayNote\EveryDayNote\obj\Debug\NotePage.baml
 D:\Projects\EveryDayNote\EveryDayNote\obj\Debug\EveryDayNote.g.resources
 D:\Projects\EveryDayNote\EveryDayNote\obj\Debug\EveryDayNote.Properties.Resources.resources
