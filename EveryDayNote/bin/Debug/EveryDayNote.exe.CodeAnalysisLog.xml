@@ -6,13 +6,13 @@
    <Modules>
     <Module Name="everydaynote.exe">
      <Messages>
-      <Message TypeName="AssembliesShouldHaveValidStrongNames" Category="Microsoft.Design" CheckId="CA2210" Status="Active" Created="2015-12-27 07:30:40Z" FixCategory="NonBreaking">
+      <Message TypeName="AssembliesShouldHaveValidStrongNames" Category="Microsoft.Design" CheckId="CA2210" Status="Active" Created="2016-01-20 10:04:19Z" FixCategory="NonBreaking">
        <Issue Name="NoStrongName" Certainty="95" Level="CriticalError">Подпишите 'EveryDayNote.exe' с использованием ключа строгого имени.</Issue>
       </Message>
-      <Message TypeName="MarkAssembliesWithClsCompliant" Category="Microsoft.Design" CheckId="CA1014" Status="Active" Created="2015-12-27 07:30:40Z" FixCategory="NonBreaking">
+      <Message TypeName="MarkAssembliesWithClsCompliant" Category="Microsoft.Design" CheckId="CA1014" Status="Active" Created="2016-01-20 10:04:19Z" FixCategory="NonBreaking">
        <Issue Certainty="95" Level="Error">Пометьте 'EveryDayNote.exe' как CLSCompliant(true), поскольку он предоставляет типы, видимые извне.</Issue>
       </Message>
-      <Message TypeName="MarkAssembliesWithNeutralResourcesLanguage" Category="Microsoft.Performance" CheckId="CA1824" Status="Active" Created="2015-12-27 07:30:40Z" FixCategory="NonBreaking">
+      <Message TypeName="MarkAssembliesWithNeutralResourcesLanguage" Category="Microsoft.Performance" CheckId="CA1824" Status="Active" Created="2016-01-20 10:04:19Z" FixCategory="NonBreaking">
        <Issue Certainty="95" Level="Warning">Так как сборка 'EveryDayNote.exe' содержит файл ResX-ресурса, пометьте его атрибутом NeutralResourcesLanguage, указав язык ресурсов внутри сборки. Это может ускорить поиск ресурса при первом извлечении.</Issue>
       </Message>
      </Messages>
@@ -23,27 +23,27 @@
          <Members>
           <Member Name="#.ctor(EveryDayNote.MainWindow)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
            <Messages>
-            <Message Id="MW" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2015-12-27 07:30:40Z" FixCategory="Breaking">
+            <Message Id="MW" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2016-01-20 10:04:19Z" FixCategory="Breaking">
              <Issue Name="MemberParameter" Certainty="85" Level="Error" Path="D:\Projects\EveryDayNote\EveryDayNote" File="NotePage.xaml.cs" Line="24">В члене 'NotePage.NotePage(MainWindow)' исправьте прописные или строчные буквы строки "MW" в имени параметра 'MW', изменив ее на "mw".</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#.ctor(EveryDayNote.MainWindow,EveryDayNoteLib.Note)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
            <Messages>
-            <Message Id="MW" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2015-12-27 07:30:40Z" FixCategory="Breaking">
+            <Message Id="MW" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2016-01-20 10:04:19Z" FixCategory="Breaking">
              <Issue Name="MemberParameter" Certainty="85" Level="Error" Path="D:\Projects\EveryDayNote\EveryDayNote" File="NotePage.xaml.cs" Line="24">В члене 'NotePage.NotePage(MainWindow, Note)' исправьте прописные или строчные буквы строки "MW" в имени параметра 'MW', изменив ее на "mw".</Issue>
             </Message>
-            <Message Id="NP" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2015-12-27 07:30:40Z" FixCategory="Breaking">
+            <Message Id="NP" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2016-01-20 10:04:19Z" FixCategory="Breaking">
              <Issue Name="MemberParameter" Certainty="85" Level="Error" Path="D:\Projects\EveryDayNote\EveryDayNote" File="NotePage.xaml.cs" Line="24">В члене 'NotePage.NotePage(MainWindow, Note)' исправьте прописные или строчные буквы строки "NP" в имени параметра 'NP', изменив ее на "np".</Issue>
             </Message>
-            <Message Id="1" TypeName="Проверить аргументы или открытые методы" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2015-12-27 07:30:40Z" FixCategory="DependsOnFix">
+            <Message Id="1" TypeName="Проверить аргументы или открытые методы" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2016-01-20 10:04:19Z" FixCategory="DependsOnFix">
              <Issue Certainty="75" Level="Warning" Path="D:\Projects\EveryDayNote\EveryDayNote" File="NotePage.xaml.cs" Line="38">В видимом извне методе 'NotePage.NotePage(MainWindow, Note)' проверьте параметр 'NP' перед его использованием.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#Encrypt" Kind="Field" Static="False" Accessibility="Private" ExternallyVisible="False">
            <Messages>
-            <Message TypeName="AvoidUnusedPrivateFields" Category="Microsoft.Performance" CheckId="CA1823" Status="Active" Created="2015-12-27 07:30:40Z" FixCategory="NonBreaking">
+            <Message TypeName="AvoidUnusedPrivateFields" Category="Microsoft.Performance" CheckId="CA1823" Status="Active" Created="2016-01-20 10:04:19Z" FixCategory="NonBreaking">
              <Issue Certainty="75" Level="Warning">Вероятно, поле 'NotePage.Encrypt' нигде не используется, или ему только присваивается значение. Используйте это поле или удалите его.</Issue>
             </Message>
            </Messages>
@@ -54,10 +54,10 @@
          <Members>
           <Member Name="#.ctor(EveryDayNoteLib.NoteProxy,EveryDayNote.MainWindow)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
            <Messages>
-            <Message Id="MW" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2015-12-27 07:30:40Z" FixCategory="Breaking">
+            <Message Id="MW" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2016-01-20 10:04:19Z" FixCategory="Breaking">
              <Issue Name="MemberParameter" Certainty="85" Level="Error" Path="D:\Projects\EveryDayNote\EveryDayNote" File="NoteUserControl.xaml.cs" Line="26">В члене 'NoteUserControl.NoteUserControl(NoteProxy, MainWindow)' исправьте прописные или строчные буквы строки "MW" в имени параметра 'MW', изменив ее на "mw".</Issue>
             </Message>
-            <Message Id="0" TypeName="Проверить аргументы или открытые методы" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2015-12-27 07:30:40Z" FixCategory="DependsOnFix">
+            <Message Id="0" TypeName="Проверить аргументы или открытые методы" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2016-01-20 10:04:19Z" FixCategory="DependsOnFix">
              <Issue Certainty="75" Level="Warning" Path="D:\Projects\EveryDayNote\EveryDayNote" File="NoteUserControl.xaml.cs" Line="30">В видимом извне методе 'NoteUserControl.NoteUserControl(NoteProxy, MainWindow)' проверьте параметр 'note' перед его использованием.</Issue>
             </Message>
            </Messages>

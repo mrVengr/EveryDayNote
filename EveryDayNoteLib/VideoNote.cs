@@ -34,10 +34,9 @@
 
         public override UIElement RestoreData()
         {
-            VideoPartUC VP = new VideoPartUC();
+            VideoPartUC VP = new VideoPartUC(Video);
             VP.InitializeComponent();
             VP.HorizontalAlignment = System.Windows.HorizontalAlignment.Stretch;
-            VP.Media = Video;
             return VP;
 
         }

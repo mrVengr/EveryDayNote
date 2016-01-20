@@ -6,6 +6,7 @@
     using System.Text;
     using System.Threading.Tasks;
     using System.Windows;
+    using System.Windows.Controls;
     using UserControls;
 
     /// <summary>
@@ -14,6 +15,7 @@
     public class VoNote : NotePart
     {
         public AudioPartUC ap = new AudioPartUC();
+        MediaElement Audio;
 
         public override void Create()
         {
@@ -31,7 +33,7 @@
 
         public override UIElement RestoreData()
         {
-            AudioPartUC AP = new AudioPartUC();
+            AudioPartUC AP = new AudioPartUC(Audio);
             AP.InitializeComponent();
             AP.HorizontalAlignment = System.Windows.HorizontalAlignment.Stretch;
             return AP;

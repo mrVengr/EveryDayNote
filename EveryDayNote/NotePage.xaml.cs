@@ -102,6 +102,7 @@
         private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
         {
             this.note.NoteComponent = this.component;
+            this.note.NoteTheme = Theme.Text;
             this.note.GetProxy();
             foreach (NotePart item in this.note.NoteComponent.Children)
             {
@@ -127,6 +128,16 @@
             if (!IsNew)
             {
                 Date.SelectedDate = note.DateNote;
+            }
+            else
+            {
+                Random Rnd = new Random();
+                byte R = (byte)(Rnd.Next(2, 7) * 20);
+                byte B = (byte)(Rnd.Next(2, 7) * 20);
+                byte G = (byte)(Rnd.Next(8, 12) * 20);
+                SolidColorBrush SCB = new SolidColorBrush();
+                SCB.Color = Color.FromArgb(255, R, G, B);
+                note.FormColor = SCB;
             }
         }
 

@@ -30,16 +30,9 @@ using System.Windows.Media;
 
         public NoteProxy(Note note_)
         {
-            DateNote = note_.DateNote;
-            Random Rnd = new Random();
-            byte R = (byte)(Rnd.Next(2, 7) * 20);
-            byte B = (byte)(Rnd.Next(2, 7) * 20);
-            byte G = (byte)(Rnd.Next(8, 12) * 20);
-            SolidColorBrush SCB = new SolidColorBrush();
-            SCB.Color = Color.FromArgb(255, R, G, B);
-            Scb = SCB;
+            Scb = note_.FormColor;
             SolidColorBrush SCBBorder = new SolidColorBrush();
-            SCBBorder.Color = Color.FromArgb(255, (byte)(R - 20), (byte)(G - 20), (byte)(B - 20));
+            SCBBorder.Color = Color.FromArgb(255, (byte)(note_.FormColor.Color.R - 20), (byte)(note_.FormColor.Color.G - 20), (byte)(note_.FormColor.Color.B - 20));
             BorderColor = SCBBorder;
             NotesPr.Add(this);
             this.Currentnote = note_;

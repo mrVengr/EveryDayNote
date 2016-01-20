@@ -23,7 +23,7 @@
                 <DatePicker Name="Date" Margin="2" SelectedDateChanged="Date_SelectedDateChanged" >
 
                 </DatePicker>
-                <TextBox Margin="2">
+                <TextBox Name="Theme" Margin="2" Text="Note">
 
                 </TextBox>
             </StackPanel>

@@ -4,17 +4,33 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              mc:Ignorable="d" Padding="2"
-             d:DesignHeight="300" d:DesignWidth="300" VerticalAlignment="Top" Height="330"
+             d:DesignHeight="300" d:DesignWidth="300" VerticalAlignment="Top" Height="330" Loaded="UserControl_Loaded"
 >
     <Grid TextElement.Foreground="{DynamicResource MaterialDesignBody}"
-        Background="{DynamicResource MaterialDesignPaper}">
-            <Button x:Name="AddBtn" Content="Add" HorizontalAlignment="Right" Margin="5" VerticalAlignment="Bottom" Width="75" FontFamily="Tahoma" FontWeight="Bold"/>
-        <Border BorderThickness="3" Margin="10,10,10,60" CornerRadius="5">
+        Background="{DynamicResource MaterialDesignPaper}" MouseWheel="Grid_MouseWheel">
+        <Button x:Name="AddBtn" Content="Add" HorizontalAlignment="Right" Margin="5" VerticalAlignment="Bottom" Width="75" FontFamily="Tahoma" FontWeight="Bold" Click="AddBtn_Click"/>
+        <Border BorderThickness="3" Margin="10,10,10,70" CornerRadius="5">
             <Border.Effect>
                 <DropShadowEffect ShadowDepth="4"/>
             </Border.Effect>
-            <MediaElement Name="video" DataContextChanged="video_DataContextChanged" />
-            </Border>
-        </Grid>
-    
+            <MediaElement Name="video" LoadedBehavior="Manual"  />
+        </Border>
+        <Button x:Name="Play"  HorizontalAlignment="Left" Margin="10,289,0,0" VerticalAlignment="Top" Width="42" Click="Play_Click" Padding="0">
+            <StackPanel>
+                <Image Source="Resources/play.png" Width="26"/>
+            </StackPanel>
+        </Button>
+        <Button x:Name="Pause" HorizontalAlignment="Left" Margin="57,289,0,0" VerticalAlignment="Top" Width="42" Click="Pause_Click" Padding="0">
+            <StackPanel>
+                <Image Source="Resources/pause.png" Width="32"/>
+            </StackPanel>
+        </Button>
+        <Slider x:Name="Progress" HorizontalAlignment="Left" Margin="10,260,10,0" VerticalAlignment="Top" Width="276" PreviewMouseUp="Progress_PreviewMouseUp"/>
+        <Button x:Name="Stop" HorizontalAlignment="Left" Margin="104,289,0,0" VerticalAlignment="Top" Width="42" Click="Stop_Click" Padding="0" ScrollViewer.CanContentScroll="True">
+            <StackPanel>
+                <Image Source="Resources/stop.png" Width="32"/>
+            </StackPanel>
+        </Button>
+    </Grid>
+
 </UserControl>

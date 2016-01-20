@@ -57,6 +57,7 @@ using EveryDayNoteLib;
             Main.BorderBrush = note.BorderColor;
             Note = note;
             MainW = MW;
+            Theme.Content = note.Currentnote.NoteTheme;
         }
 
         private void UserControl_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)

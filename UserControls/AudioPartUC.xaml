@@ -3,10 +3,26 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" Padding="2"
-             mc:Ignorable="d" d:DesignWidth="300" VerticalAlignment="Top">
+             mc:Ignorable="d" d:DesignWidth="300" VerticalAlignment="Top" Loaded="UserControl_Loaded">
     <Grid TextElement.Foreground="{DynamicResource MaterialDesignBody}"
-        Background="{DynamicResource MaterialDesignPaper}">
-        <Slider Margin="10,60,10,10" VerticalAlignment="Top"/>
-        <Button x:Name="AddBtn" Margin="5" Content="Add" VerticalAlignment="Top" Width="75" HorizontalAlignment="Right" FontFamily="Tahoma" FontWeight="Bold"/>
+        Background="{DynamicResource MaterialDesignPaper}" MouseWheel="Grid_MouseWheel">
+        <MediaElement x:Name="AudioPlay" LoadedBehavior="Manual"></MediaElement>
+        <Slider x:Name="Progress" Margin="10,60,10,10" VerticalAlignment="Top" PreviewMouseUp="Progress_PreviewMouseUp"/>
+        <Button x:Name="AddBtn" Margin="5" Content="Add" VerticalAlignment="Top" Width="75" HorizontalAlignment="Right" FontFamily="Tahoma" FontWeight="Bold" Click="AddBtn_Click"/>
+        <Button x:Name="Play" HorizontalAlignment="Left" Margin="10,5,0,0" VerticalAlignment="Top" Width="45" Click="Play_Click" Padding="0" IsCancel="True">
+            <StackPanel>
+                <Image Source="Resources/play.png" Width="26"></Image>
+            </StackPanel>
+        </Button>
+        <Button x:Name="Pause" HorizontalAlignment="Left" Margin="60,5,0,0" VerticalAlignment="Top" Width="45" Click="Pause_Click" Padding="0">
+            <StackPanel>
+                <Image Source="Resources/pause.png" Width="32"></Image>
+            </StackPanel>
+        </Button>
+        <Button x:Name="Stop" HorizontalAlignment="Left" Margin="110,5,0,0" VerticalAlignment="Top" Width="45" Click="Stop_Click" Padding="0" ScrollViewer.CanContentScroll="True">
+            <StackPanel>
+                <Image Source="Resources/stop.png"  Width="32"></Image>
+            </StackPanel>
+        </Button>
     </Grid>
 </UserControl>

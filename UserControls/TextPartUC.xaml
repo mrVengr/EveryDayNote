@@ -8,7 +8,7 @@
     <Grid TextElement.Foreground="{DynamicResource MaterialDesignBody}"
         Background="{DynamicResource MaterialDesignPaper}">
         <Border  BorderThickness="3" Margin="10,10,10,10" CornerRadius="5">
-            <TextBox  Name="TextData" BorderThickness="1" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" TextChanged="TextData_TextChanged"/>
+            <TextBox  Name="TextData" AcceptsReturn="True" TextWrapping = "Wrap" BorderThickness="1" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" TextChanged="TextData_TextChanged" VerticalScrollBarVisibility="Auto"/>
         </Border>
     </Grid>
 </UserControl>

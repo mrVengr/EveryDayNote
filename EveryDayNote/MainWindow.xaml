@@ -9,13 +9,30 @@
             <WrapPanel x:Name="WrapP" UseLayoutRounding="True" Orientation="Vertical"/>
         </ScrollViewer>
 
-        <Button Style="{DynamicResource MaterialDesignFloatingActionButton}" Name="Settings" HorizontalAlignment="Right" Height="30" Margin="0,0,25,25" VerticalAlignment="Bottom" Width="30" Click="Settings_Click"/>
+        <Button Style="{DynamicResource MaterialDesignFloatingActionButton}" Name="Settings" HorizontalAlignment="Right" Height="30" Margin="0,0,25,25" VerticalAlignment="Bottom" Width="30" Click="Settings_Click">
+            <StackPanel>
+                <Image Source="Resources/settings.png" Width="23"/>
+            </StackPanel>
 
-        <Button Style="{DynamicResource MaterialDesignFloatingActionLightButton}" Height="35" Margin="0,0,54,4" HorizontalAlignment="Right" VerticalAlignment="Bottom" Width="35"  Name="AddNote" Opacity="0" Click="AddNote_Click"/>
+        </Button>
+
+        <Button Style="{DynamicResource MaterialDesignFloatingActionLightButton}" Height="35" Margin="0,0,54,4" HorizontalAlignment="Right" VerticalAlignment="Bottom" Width="35"  Name="AddNote" Opacity="0" Click="AddNote_Click">
+            <StackPanel>
+                <Image Source="Resources/note.png" Width="25"/>
+            </StackPanel>
+        </Button>
 
 
-        <Button Style="{DynamicResource MaterialDesignFloatingActionLightButton}" Height="35" Margin="0,0,51,44" HorizontalAlignment="Right" VerticalAlignment="Bottom" Width="35"  Name="LookCalendar"  Opacity="0" Click="LookCalendar_Click"/>
+        <Button Style="{DynamicResource MaterialDesignFloatingActionLightButton}" Height="35" Margin="0,0,51,44" HorizontalAlignment="Right" VerticalAlignment="Bottom" Width="35"  Name="LookCalendar"  Opacity="0" Click="LookCalendar_Click">
+            <StackPanel>
+                <Image Source="Resources/date.png" Width="25"/>
+            </StackPanel>
+        </Button>
 
-        <Button Style="{DynamicResource MaterialDesignFloatingActionLightButton}" Height="35" Margin="0,0,14,57" HorizontalAlignment="Right" VerticalAlignment="Bottom" Width="35"  Name="Exit" Opacity="0" Click="Exit_Click"/>
+        <Button Style="{DynamicResource MaterialDesignFloatingActionLightButton}" Height="35"  Margin="0,0,14,57" HorizontalAlignment="Right" VerticalAlignment="Bottom" Width="35"  Name="Exit" Opacity="0" Click="Exit_Click" Background="#FFE07272" BorderBrush="#FFE07272">
+            <StackPanel>
+                <Image Source="Resources/exit.png" Width="25"/>
+            </StackPanel>
+        </Button>
     </Grid>
 </Window>

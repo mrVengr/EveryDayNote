@@ -6,14 +6,14 @@
              mc:Ignorable="d" Background="Transparent" d:DesignWidth="300" Width="220" Height="204" Padding="5" MouseLeftButtonUp="UserControl_MouseLeftButtonUp" Loaded="UserControl_Loaded" >
     <Border Name="Main" BorderThickness="2" CornerRadius="7" BorderBrush="#FF28307E">
         <Grid>
-            <Label BorderThickness="2" Content="Note" Margin="10,10,10,0" VerticalAlignment="Top" Height="41" FontSize="18" HorizontalContentAlignment="Center">
+            <Label Name="Theme" BorderThickness="2" Content="Note" Margin="10,10,10,0" VerticalAlignment="Top" Height="41" FontSize="18" HorizontalContentAlignment="Center">
             </Label>
             <Rectangle x:Name="AudioEl" HorizontalAlignment="Left" Height="51" Margin="10,56,0,0" Stroke="#FF44662E" VerticalAlignment="Top" Width="65" StrokeThickness="0">
                 <Rectangle.Effect>
                     <DropShadowEffect Color="White"/>
                 </Rectangle.Effect>
                 <Rectangle.Fill>
-                    <ImageBrush ImageSource="pack://application:,,,/Images/Audio.jpg" Stretch="Uniform"/>
+                    <ImageBrush ImageSource="/Resources/Audio.jpg"  Stretch="Uniform"/>
                 </Rectangle.Fill>
             </Rectangle>
             <Rectangle x:Name="PictureEl" HorizontalAlignment="Left" Height="51" Margin="73,79,0,0" Stroke="#FF44662E" VerticalAlignment="Top" Width="65" StrokeThickness="0">
@@ -21,7 +21,7 @@
                     <DropShadowEffect Color="White"/>
                 </Rectangle.Effect>
                 <Rectangle.Fill>
-                    <ImageBrush ImageSource="pack://application:,,,/Images/Picture.png" Stretch="Uniform"/>
+                    <ImageBrush ImageSource="/Resources/Picture.png" Stretch="Uniform"/>
                 </Rectangle.Fill>
             </Rectangle>
             <Rectangle x:Name="VideoEl" HorizontalAlignment="Left" Height="51" Margin="131,56,0,0" Stroke="#FF44662E" VerticalAlignment="Top" Width="65" RenderTransformOrigin="2.446,0.529" StrokeThickness="0">
@@ -29,7 +29,7 @@
                     <DropShadowEffect Color="White"/>
                 </Rectangle.Effect>
                 <Rectangle.Fill>
-                    <ImageBrush ImageSource="pack://application:,,,/Images/Video.png" Stretch="Uniform"/>
+                    <ImageBrush ImageSource="/Resources/Video.png" Stretch="Uniform"/>
                 </Rectangle.Fill>
             </Rectangle>
             <DatePicker Name="DatePick" Margin="10,0,10,10" VerticalAlignment="Bottom" Width="186" IsEnabled="False"/>

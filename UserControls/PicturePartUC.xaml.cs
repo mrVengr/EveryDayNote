@@ -48,7 +48,7 @@
             Microsoft.Win32.OpenFileDialog dlg = new Microsoft.Win32.OpenFileDialog();
 
             dlg.DefaultExt = ".jpg";
-            dlg.Filter = "Pictures(.jpg)|*.jpg | PNG.Files(.png) | *.png";
+            dlg.Filter = "Pictures (*.jpg)|*.jpg|All files (*.*)|*.*";
             Nullable<bool> result = dlg.ShowDialog();
             if (result == true)
             {

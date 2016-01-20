@@ -5,7 +5,7 @@
     using System.Linq;
     using System.Text;
     using System.Threading.Tasks;
-
+    using System.Windows.Media;
     /// <summary>
     /// Note Interface
     /// </summary>
@@ -33,7 +33,23 @@
             get { return dateNote; }
             set { dateNote = value; }
         }
-        
+
+        private SolidColorBrush formColor;
+
+        public SolidColorBrush FormColor
+        {
+            get { return formColor; }
+            set { formColor = value; }
+        }
+
+        private string noteTheme;
+
+        public string NoteTheme
+        {
+            get { return noteTheme; }
+            set { noteTheme = value; }
+        }
+            
 
         public void GetProxy()
         {

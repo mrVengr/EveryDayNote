@@ -28,3 +28,5 @@ D:\Projects\EveryDayNote\UserControls\obj\Debug\UserControls_MarkupCompile.cache
 D:\Projects\EveryDayNote\UserControls\obj\Debug\UserControls.g.resources
 D:\Projects\EveryDayNote\UserControls\obj\Debug\UserControls.dll
 D:\Projects\EveryDayNote\UserControls\obj\Debug\UserControls.pdb
+D:\Projects\EveryDayNote\UserControls\obj\Debug\UserControls.Properties.Resources.resources
+D:\Projects\EveryDayNote\UserControls\obj\Debug\UserControls.csproj.GenerateResource.Cache
